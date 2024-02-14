@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/code/CE/4/4/4.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/code/CE/4/4/4.srcs/sim_1/new/tb.v,1698972351,verilog,,,,alu_tb,,,,,,,,
+D:/code/CE/4/4/4.srcs/sources_1/imports/source/adder.v,1695113701,verilog,,D:/code/CE/4/4/4.srcs/sources_1/imports/source/alu.v,,adder,,,,,,,,
+D:/code/CE/4/4/4.srcs/sources_1/imports/source/alu.v,1697162641,verilog,,D:/code/CE/4/4/4.srcs/sim_1/new/tb.v,,alu,,,,,,,,
+D:/code/CE/4/4/4.srcs/sources_1/imports/source/alu_display.v,1696725486,verilog,,,,alu_display,,,,,,,,

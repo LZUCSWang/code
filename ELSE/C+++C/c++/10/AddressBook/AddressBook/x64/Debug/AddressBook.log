@@ -1,0 +1,11 @@
+﻿  AddressBook.cpp
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(13,92): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(16,86): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(27,78): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(30,72): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(686,40): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(687,42): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(688,40): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(769,54): warning C4838: 从“char”转换到“wchar_t”需要收缩转换
+D:\code\C+++C\c++\10\AddressBook\AddressBook\AddressBook.cpp(773,36): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+  AddressBook.vcxproj -> D:\code\C+++C\c++\10\AddressBook\x64\Debug\AddressBook.exe

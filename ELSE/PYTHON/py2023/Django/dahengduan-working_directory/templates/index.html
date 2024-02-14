@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/fonts.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="{% static "images/ie8-panel/warning_bar_0000_us.jpg" %}" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="csslo
+        ad-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div><a class="section section-banner d-none d-xl-block" href="#" target="_blank" style="background-image: url({% static "images/background-02-1920x60.jpg" %}); background-image: -webkit-image-set( url({% static "images/background-02-1920x60.jpg" %}) 1x, url({% static "images/background-02-3840x120.jpg" %}) 2x )"><img src="{{ MEDIA_URL }}{{ img.1.img }}" srcset="{{ MEDIA_URL }}{{ img.1.img }} 1x, {{ MEDIA_URL }}{{ img.1.img }} 2x" alt="" width="1600" height="310"></a>
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark">
+              <div class="rd-navbar-aside">
+                <ul class="list-inline navbar-contact-list">
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
+                      <div class="unit-body"><a href="#">+1 800 123 45 67</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
+                      <div class="unit-body"><a href="#">info@dahengduan.org</a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-spacing-xs align-items-center">
+                      <div class="unit-left"><span class="icon text-middle fa-map-marker"></span></div>
+                      <div class="unit-body"><a href="#">甘肃省兰州市城关区天水南路222号</a></div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="social-links">
+                    {% if user.is_authenticated %}
+                    <li><a href="#">{{user}}</a></li>
+                        <li><a href="{% url 'account_logout' %}">注销</a></li>
+
+                    {% else %}
+                        <li><a href="{% url 'account_login' %}">登录</a></li>
+                    <li><a href="{% url 'account_signup' %}">注册</a></li>
+
+                    {% endif %}
+                </ul>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!--RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!--RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!--RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="#"><img class="brand-logo-dark" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/><img class="brand-logo-light" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'mainapp:index' %}">Home</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'mainapp:ethnic_page' %}">Ethnic</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'mainapp:tourism_page' %}">Tourism</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'mainapp:contacts' %}">Contacts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!--Main section-->
+      <section class="section main-section parallax-scene-js" style="background:url({{ MEDIA_URL }}{{ img.2.img }}) no-repeat center center; background-size:cover;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-12">
+              <div class="text-center text-xl-left">
+                <h1 class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s"><span class="align-top offset-top-30 d-inline-block font-weight-light prefix-text">the</span><span class="big font-weight-bold d-inline-flex offset-right-170">大横断</span><span class="biggest d-block d-xl-flex font-weight-bold">风物志</span></h1>
+                <div class="decorated-subtitle text-italic text-white wow slideInLeft" style="font-size: 30px">“大横断历史文化” 研究团队</div>
+              </div>
+            </div>
+            <div class="col-12 text-center offset-top-75" data-wow-delay=".2s"><a class="button-way-point d-inline-block text-center d-inline-flex flex-column justify-content-center" href="#" data-custom-scroll-to="about"><span class="fa-chevron-down"></span></a></div>
+          </div>
+        </div>
+        <div class="decorate-layer">
+          <div class="layer-1">
+            <div class="layer" data-depth=".20"><img src="{% static "images/parallax-item-1-563x532.png" %}" alt="" width="563" height="266"/>
+            </div>
+          </div>
+          <div class="layer-2">
+            <div class="layer" data-depth=".30"><img src="{% static "images/parallax-item-2-276x343.png" %}" alt="" width="276" height="171"/>
+            </div>
+          </div>
+          <div class="layer-3">
+            <div class="layer" data-depth=".40"><img src="{% static "images/parallax-item-3-153x144.png" %}" alt="" width="153" height="72"/>
+            </div>
+          </div>
+          <div class="layer-4">
+            <div class="layer" data-depth=".20"><img src="{% static "images/parallax-item-4-69x74.png" %}" alt="" width="69" height="37"/>
+            </div>
+          </div>
+          <div class="layer-5">
+            <div class="layer" data-depth=".40"><img src="{% static "images/parallax-item-5-72x75.png" %}" alt="" width="72" height="37"/>
+            </div>
+          </div>
+          <div class="layer-6">
+            <div class="layer" data-depth=".30"><img src="{% static "images/parallax-item-6-45x54.png" %}" alt="" width="45" height="27"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--About-->
+      <section class="section section-sm position-relative" id="about">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-6">
+              <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img src="{{MEDIA_URL}}{{img.3.img}}" alt="" width="570" height="351"/>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="block-sm offset-top-45">
+                <div class="section-name wow fadeInRight" data-wow-delay=".2s">关于我们</div>
+                <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s">What We<span class="text-primary"> Do</span></h3>
+                <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s">横断山大体范围是“东起岷山-邛崃山，西抵伯舒拉岭-高黎贡山，北界位于昌都、甘孜至马尔康一线，南界抵达中缅边境的山区”，这太专业了，说人话就是四川省面积占得最多，云南、西藏次之，再加上青海、甘肃的极小部分。一语概括，川、滇、藏三省的交汇孕育出广袤的横断山区</p>
+                <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">”大横断”历史文化研究团队是一个专门研究大横断地区历史文化的学术团队，致力于探讨历史与文化之间的关系，并运用现代研究方法对历史和文化进行研究。该团队的研究领域包括：历史文化、文化遗产、历史地理、文化人类学等。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="decor-text decor-text-1">ABOUT</div>
+      </section>
+      <!--Features-->
+      <section class="section custom-section position-relative section-md">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7 col-lg-7 col-12">
+              <div class="section-name wow fadeInRight">团队工作</div>
+              <h3 class="text-capitalize devider-left wow fadeInLeft" data-wow-delay=".2s">Our<span class="text-primary"> Features</span></h3>
+              <p>团队的工作项目因地域、时期和研究领域的不同而有所不同，但总的目的是以最先进最现代最合理的方式探究历史文化并对其进行保护。</p>
+              <div class="row row-15">
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".2s">
+                  <div class="box-default">
+                    <div class="box-default-title">启发性</div>
+                    <p class="box-default-description">我们致力于挖掘历史文化中具有启发性的部分，立足现在，研究过去，放眼未来。</p><span class="box-default-icon novi-icon icon-lg mercury-icon-lightbulb-gears"></span>
+                  </div>
+                </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".3s">
+                  <div class="box-default">
+                    <div class="box-default-title">数字化</div>
+                    <p class="box-default-description">我们利用数字技术和方法对历史文化进行研究，以提高研究的效率和准确性。</p><span class="box-default-icon novi-icon icon-lg mercury-icon-target-2"></span>
+                  </div>
+                </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".4s">
+                  <div class="box-default">
+                    <div class="box-default-title">大团队</div>
+                    <p class="box-default-description">我们拥有超过600人的研究团队。这使得我们的研究更加深入于全面。</p><span class="box-default-icon novi-icon icon-lg mercury-icon-user"></span>
+                  </div>
+                </div>
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay=".5s">
+                  <div class="box-default">
+                    <div class="box-default-title">合作共享</div>
+                    <p class="box-default-description">我们与全世界的研究团队保持着交流与合作，这使得我们始终保持在科学前沿。</p><span class="box-default-icon novi-icon icon-lg mercury-icon-partners"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-left-side wow slideInRight" data-wow-delay=".5s"><img src="{{ MEDIA_URL }}{{ img.4.img }}" alt="" width="636" height="240"/>
+        </div>
+        <div class="decor-text decor-text-2 wow fadeInUp" data-wow-delay=".3s">features</div>
+      </section>
+      <!--Counters-->
+      <section class="section bg-image-2" style="background:url({{ MEDIA_URL }}{{ img.5.img }})no-repeat;background-size:cover">
+        <div class="container section-md">
+          <div class="row row-30 text-center">
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-time"></span><span class="counter text-white" data-speed="2000">2007</span>
+                </div>
+                <div class="counter-classic-title">成立年份</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-folder"></span><span class="counter text-white" data-speed="2000">247</span>
+                </div>
+                <div class="counter-classic-title">发表论文数量</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-users"></span><span class="counter text-white" data-speed="2000">45</span><span class="symbol text-white">+</span>
+                </div>
+                <div class="counter-classic-title">合作伙伴</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+              <div class="counter-classic">
+                <div class="counter-classic-number"><span class="icon-lg novi-icon offset-right-10 mercury-icon-group"></span><span class="counter text-white" data-speed="2000">600</span>
+                </div>
+                <div class="counter-classic-title">团队成员</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Pricing-->
+      <section class="section section-md bg-xs-overlay" style="background:url({{ MEDIA_URL }}{{ img.6.img }})no-repeat;background-size:cover">
+        <div class="container">
+          <div class="row row-50 justify-content-center">
+            <div class="col-12 text-center col-md-10 col-lg-8">
+              <div class="section-name wow fadeInRight" data-wow-delay=".2s">民族</div>
+              <h3 class="wow fadeInLeft text-capitalize" data-wow-delay=".3s">ethnic <span class="text-primary">group</span></h3>
+              <p>横断山区是我国西部历史上藏、羌、彝众多民族先民为主体、贯穿大西北、大西南的民族迁徙通道区，为费孝通先生提出的“民族走廊”学说中具有代表性的区域之一。</p>
+            </div>
+          </div>
+          <div class="row row-30 justify-content-center">
+            <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
+              <div class="pricing-box bg-gray-dark" style=" background-size: 100% 100%; background: url({{MEDIA_URL}}{{ethnic.0.img}}) no-repeat;">
+                <div class="pricing-box-tittle" style="font-weight: 600">{{ethnic.0.name}}</div>
+                <p>{{ethnic.0.intro}}</p>
+                <hr/>
+                <div class="pricing-box-inner"><span class="pricing-box-symbol">人口</span><span class="pricing-box-price">{{ethnic.0.population}}万</span></div>
+                <div class="pricing-box-label bg-gray" style="opacity: 0">MONTHLY</div>
+                <a class="button button-190 button-circle btn-primary-rounded" href="{% url 'mainapp:ethnic_page' %}#{{ethnic.0.name}}">了解更多</a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+              <div class="pricing-box bg-gray-primary" style=" background-size: 100% 100%; background: url({{MEDIA_URL}}{{ethnic.1.img}}) no-repeat;">
+                <div class="pricing-box-tittle" style="font-weight: 600">{{ethnic.1.name}}</div>
+                <p>{{ethnic.1.intro}}</p>
+                <hr/>
+                <div class="pricing-box-inner"><span class="pricing-box-symbol">人口</span><span class="pricing-box-price">{{ethnic.1.population}}万</span></div>
+                <div class="pricing-box-label bg-gray" style="opacity: 0">MONTHLY</div>
+                <a class="button button-190 button-circle btn-rounded-outline" href="{% url 'mainapp:ethnic_page' %}#{{ethnic.1.name}}">了解更多</a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-12 wow fadeInDown" data-wow-delay=".3s">
+              <div class="pricing-box bg-gray-dark" style=" background-size: 100% 100%; background: url({{MEDIA_URL}}{{ethnic.2.img}}) no-repeat;">
+                <div class="pricing-box-tittle" style="font-weight: 600">{{ethnic.2.name}}</div>
+                <p>{{ethnic.2.intro}}</p>
+                <hr/>
+                <div class="pricing-box-inner"><span class="pricing-box-symbol">人口</span><span class="pricing-box-price">{{ethnic.2.population}}万</span></div>
+                <div class="pricing-box-label bg-gray" style="opacity: 0">MONTHLY</div>
+                <a class="button button-190 button-circle btn-primary-rounded" href="{% url 'mainapp:ethnic_page' %}#{{ethnic.2.name}}">了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Owl Carousel-->
+      <section class="section section-md bg-gray-lighten">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div class="section-name wow fadeInRight text-center" data-wow-delay=".2s">旅游资源</div>
+              <h3 class="wow fadeInLeft text-capitalize text-center" data-wow-delay=".3s">Tourism<span class="text-primary"> Attractions</span></h3>
+              <div class="owl-carousel review-carousel" data-items="1" data-sm-items="1" data-md-items="1" data-lg-items="1" data-xl-items="1" data-xxl-items="1" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="0" data-mouse-drag="true" data-autoplay="false">
+
+                {% for i in attractions %}
+                <div class="item">
+                  <div class="item-preview wow fadeInDown" data-wow-delay=".2s"><a href="{% url 'mainapp:tourism_page' %}#{{i.name}}"><img src="{{MEDIA_URL}}{{i.img_index}}" alt="" width="216" height="108" /></a>
+                  </div>
+                  <div class="item-description wow fadeInUp" data-wow-delay=".3s">
+                    <p>{{i.intro}}</p>
+                    <div class="item-subsection"><span class="item-subsection-title devider-left">{{i.name}}</span><span></span></div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer--><a class="section section-banner" target="_blank" style="background-image: url(images/background-01-1920x310.jpg); background-image: -webkit-image-set( url({% static "images/background-01-1920x310.jpg" %}) 1x, url({% static "images/background-01-3840x620.jpg" %}) 2x )"><img src="{{ MEDIA_URL }}{{ img.0.img }}" srcset="{{ MEDIA_URL }}{{ img.0.img }} 1x, {{ MEDIA_URL }}{{ img.0.img }} 2x" alt="" width="1600" height="310"></a>
+      <footer class="section footer-classic section-sm">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-3 wow fadeInLeft">
+              <!--Brand--><a class="brand" href="#"><img class="brand-logo-dark" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/><img class="brand-logo-light" src="{% static "images/logo-hengduan-200x34.png" %}" alt="" width="100" height="17"/></a>
+              <p class="footer-classic-description offset-top-0 offset-right-25">大横断历史文化研究团队是一个专门研究历史文化的学术团队，致力于探讨历史与文化之间的关系，并运用现代研究方法对历史和文化进行研究。该团队的研究领域包括：历史文化、文化遗产、历史地理、文化人类学等。</p>
+            </div>
+            <div class="col-lg-3 col-sm-8 wow fadeInUp">
+              <P class="footer-classic-title">contact info</P>
+              <div class="d-block offset-top-0">甘肃省兰州市城关区<span class="d-lg-block">天水南路222号</span></div><a class="d-inline-block accent-link" href="#">info@dahengduan.org</a><a class="d-inline-block" href="#">+1 800 123 45 67</a>
+              <ul>
+                <li>工作日:<span class="d-inline-block offset-left-10 text-white">9:30 AM - 9:00 PM</span></li>
+                <li>周六:<span class="d-inline-block offset-left-10 text-white">10:00 AM - 9:00 PM</span></li>
+                <li>周日:<span class="d-inline-block offset-left-10 text-white">10:00 AM - 3:00 PM</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
+              <P class="footer-classic-title">Quick Links</P>
+              <ul class="footer-classic-nav-list">
+                <li><a href="{% url 'mainapp:index' %}">Home</a></li>
+                <li><a href="{% url 'mainapp:index' %}">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="{% url 'mainapp:contacts' %}">Contacts</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="{% static "js/core.min.js" %}"></script>
+    <script src="{% static "js/script.js" %}"></script>
+    <!--coded by Drel-->
+  </body>
+</html>

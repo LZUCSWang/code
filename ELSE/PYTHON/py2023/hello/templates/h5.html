@@ -1,0 +1,8 @@
+
+
+<form action="/h5/" method="post">
+    <input type='submit' value="提交"></br>
+    {% for name in data %}
+    <input type="radio" name='user' value="{{name}}">{{name}}</br>
+    {% endfor %}    
+<form>

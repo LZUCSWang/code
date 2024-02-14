@@ -1,0 +1,10 @@
+﻿  StudentScore.cpp
+D:\code\C+++C\c++\10\StudentScore\StudentScore\StudentScore.h(14,1): warning C4005: “IDM_EXIT”: 宏重定义
+D:\code\C+++C\c++\10\StudentScore\StudentScore\resource.h(11,1): message : 参见“IDM_EXIT”的前一个定义
+D:\code\C+++C\c++\10\StudentScore\StudentScore\StudentScore.cpp(287,89): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\StudentScore\StudentScore\StudentScore.cpp(290,83): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\StudentScore\StudentScore\StudentScore.cpp(301,75): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\StudentScore\StudentScore\StudentScore.cpp(304,69): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\StudentScore\StudentScore\StudentScore.cpp(827,25): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\StudentScore\StudentScore\StudentScore.cpp(828,27): warning C4244: “初始化”: 从“LRESULT”转换到“int”，可能丢失数据
+  StudentScore.vcxproj -> D:\code\C+++C\c++\10\StudentScore\x64\Debug\StudentScore.exe

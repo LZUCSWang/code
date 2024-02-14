@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<ipython-input-13-41f41c981965>", line 6, in main
+    f1()
+  File "<ipython-input-13-41f41c981965>", line 11, in f1
+    def f1(): f2()
+  File "<ipython-input-13-41f41c981965>", line 12, in f2
+    def f2(): f3()
+  File "<ipython-input-13-41f41c981965>", line 13, in f3
+    def f3(): raise MyException("自定义异常信息")
+MyException: 自定义异常信息
+Traceback (most recent call last):
+  File "<ipython-input-14-41f41c981965>", line 6, in main
+    f1()
+  File "<ipython-input-14-41f41c981965>", line 11, in f1
+    def f1(): f2()
+  File "<ipython-input-14-41f41c981965>", line 12, in f2
+    def f2(): f3()
+  File "<ipython-input-14-41f41c981965>", line 13, in f3
+    def f3(): raise MyException("自定义异常信息")
+MyException: 自定义异常信息

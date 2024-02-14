@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="/static/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>数据下载 - 政务数据网站</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/animate.min.css" rel="stylesheet"/>
+    <link href="/static/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="/static/css/pe-icon-7-stroke.css" rel="stylesheet" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar" data-color="blue">
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    政务数据网站
+                </a>
+            </div>
+            <ul class="nav">
+                <li class="active">
+                    <a href="/"><i class="pe-7s-home"></i><p>首页</p></a>
+                </li>
+                <li>
+                    <a href="/data/"><i class="pe-7s-note2"></i><p>数据查询</p></a>
+                </li>
+                <li>
+                    <a href="/download/"><i class="pe-7s-cloud-download"></i><p>数据下载</p></a>
+                </li>
+                <li>
+                    <a href="/charts/"><i class="pe-7s-graph"></i><p>数据分析可视化</p></a>
+                </li>
+                <li class="active-pro">
+                    <a href="/login/"><i class="pe-7s-right-arrow"></i><p>进入 管理系统</p></a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/data/">
+                        {% if request.user.is_authenticated %}
+                            欢迎您，用户 {{ request.user.username }}
+                        {% else %}
+                            登录网站，使用更多功能
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            {% if request.user.is_authenticated %}
+                           <a href="/logout/">退出登录</a>
+                            {% else %}
+                           <a href="/login/">立即登录</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 内容 -->
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="header top-card">
+                                <h4 class="title text-success">{{ total }}</h4>
+                                <p class="category">总数据</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="header top-card">
+                                <h4 class="title text-primary">{{ this_mouth }}</h4>
+                                <p class="category">近月政务</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="header top-card">
+                                <h4 class="title text-danger">{{ raise_rate }}</h4>
+                                <p class="category">增长率（%）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="header top-card">
+                                <h4 class="title text-warning">{{ city_count }}</h4>
+                                <p class="category">城市数据（座城市）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">网络问政</h4>
+                                <p class="category">问政中国，国务院回应关切</p>
+                            </div>
+                            <div class="content">
+                                <div style="height: 398px">
+                                <p>有信心人民币能保持稳定</p>
+                                 <p>加快文化强国建设步伐</p>
+                                 <p>两部门详解营改增“收官”之战</p>
+                                 <p>卫计委希望公众及时接种疫苗</p>
+                                 <p>“藏粮于地”“藏粮于技”</p>
+                                 <p>发展改革委回应当前生猪价格</p>
+                                 <p>财政部:个人出境购 免税额不变</p>
+                                 <p>积压商标注册证5月底前全部发放</p>
+                                 <p>生猪价格暴涨可能性不大</p>
+                                    <p>工商总局：广告法管得住微商</p>
+                                    <p>进一步推动可再生能源开发利用</p>
+                                    <p>周末弹性作息制度须遵守规定</p>
+                                </div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-clock-o"></i> 更新于 2 分钟前
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">数据地图</h4>
+                                <p class="category">24 小时展示</p>
+                            </div>
+                            <div class="content">
+                                <div id="map" class="ct-chart" style="height: 393px;"></div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-history"></i> 更新于 3 分钟前
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">政务数据</h4>
+                                <p class="category">通过echarts对政务数据增幅情况进行可视化</p>
+                            </div>
+                            <div class="content">
+                                <div id="chart" class="ct-chart"></div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-check"></i> Data information certified
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card ">
+                            <div class="header">
+                                <h4 class="title">总书记讲话</h4>
+                                <p class="category">习近平总书记重要讲话</p>
+                            </div>
+                            <div class="content">
+                                <div style="height: 331px">
+                                <p>习近平主持二十届中共中央政治局第三次集体学习</p>
+                                <p>当前经济工作的几个重大问题</p>
+                                <p>全面从严治党探索出依靠党的自我革命跳出历史周期率的成功路径</p>
+                                <p>习近平在二十届中央纪委二次全会上发表重要讲话</p>
+                                <p>国家主席习近平发表二〇二三年新年贺词</p>
+                                <p>为实现党的二十大确定的目标任务而团结奋斗</p>
+                                <p>继承和发扬党的优良革命传统和作风 弘扬延安精神</p>
+                                <p>在党的十九届七中全会第二次全体会议上的讲话</p>
+                                <p>团结合作勇担责任　构建亚太命运共同体</p>
+                                <p>坚守初心 共促发展 开启亚太合作新篇章</p>
+                                </div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        <i class="fa fa-history"></i> 更新于 3 分钟前
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="/data/">
+                                政务数据网站
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+</body>
+    <script src="/static/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/static/js/bootstrap-checkbox-radio-switch.js"></script>
+    <script src="/static/js/bootstrap-notify.js"></script>
+	<script src="/static/js/light-bootstrap-dashboard.js"></script>
+	<script src="/static/js/demo.js"></script>
+	<script src="/static/js/echarts.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/china.js' %}"></script>
+    <script>
+        var dom5 = document.getElementById("chart");
+        var myChart5 = echarts.init(dom5);
+        var option5 = {
+            color: ['#ff7b7c', '#73DEB3', '#87878b','#45C2E0', '#C1EBDD', '#FFC851','#5A5476','#1869A0','#FF9393'],
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    crossStyle: {
+                        color: '#999'
+                    },
+                    lineStyle: {
+                        type: 'dashed'
+                    }
+                }
+            },
+            grid: {
+                left: '25',
+                right: '25',
+                bottom: '24',
+                top: '66',
+                containLabel: true
+            },
+            legend: {
+                data: {{ citys|safe }},
+                orient: 'horizontal',
+                icon: "rect",
+                show: true,
+                left: 20,
+                top: 0,
+            },
+            xAxis: {
+                type: 'category',
+                data: {{ dates|safe }},
+                splitLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: false
+                },
+            },
+            yAxis: {
+                type: 'value',
+                axisLabel: {
+                    color: '#999',
+                    textStyle: {
+                        fontSize: 12
+                    },
+                },
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: '#F3F4F4'
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    show: false
+                },
+            },
+            series: [{% for i in datas %}
+                {
+                    name: '{{ i.name }}',
+                    type: 'line',
+                    smooth: true,
+                    data: {{ i.data|safe }}
+                },
+                {% endfor %}
+            ]
+        };
+        myChart5.setOption(option5, true);
+        </script>
+
+<script type="text/javascript">
+    {# 地图 #}
+    var dom_map2 = document.getElementById("map");
+    var map2 = echarts.init(dom_map2);
+    window.dataList2 = {{ map|safe }};
+    var option_map2 = {
+        tooltip: {
+            show: true,
+            trigger: 'item',
+            formatter: function (params) {
+                return params.name + ' 共有 ' + params.data['value'] + ' 条数据'
+            },
+        },
+        visualMap: {
+            min: 0,
+            max: 1000,
+            //left: 26,
+            //bottom: 40,
+            showLabel: true,
+            text: ["高", "低"],
+            pieces: [{
+                min: 40001,
+                color: '#57166f'
+            },
+                {
+                    min: 30001,
+                    max: 40000,
+                    color: '#26244d'
+                },
+                {
+                    min: 20001,
+                    max: 30000,
+                    color: '#222b86'
+                },
+                {
+                    min: 10001,
+                    max: 20000,
+                    color: '#1c3fbf'
+                },
+                {
+                    min: 5001,
+                    max: 10000,
+                    color: '#1482e5'
+                },
+                {
+                    min: 1,
+                    max: 5000,
+                    color: '#70b4eb'
+                },
+                {
+                    value: 0,
+                    color: '#b4e0f3'
+                }
+            ],
+            textStyle: {
+                color: '#000'
+            },
+            show: true
+        },
+        geo: {
+            map: "china",
+            //layoutCenter:['100%','100%'],
+            //layoutSize: '300px',
+            roam: !1,
+            scaleLimit: {
+                min: 1,
+                max: 2
+            },
+            zoom: 1,
+            label: {
+                normal: {
+                    fontSize: "14",
+                    color: "rgba(0,0,0,0.7)"
+                }
+            },
+            itemStyle: {
+                normal: {
+                    borderColor: "#fff"
+                },
+                emphasis: {
+                    areaColor: "yellow",
+                    shadowOffsetX: 0,
+                    shadowOffsetY: 0,
+                    borderWidth: 0
+                }
+            }
+        },
+        series: [{
+            name: "政务数据",
+            type: "map",
+            geoIndex: 0,
+            data: window.dataList2
+        }]
+    };
+    map2.setOption(option_map2, true);
+</script>
+</html>

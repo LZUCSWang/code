@@ -1,0 +1,203 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct xiang //?????
+{
+    float x;
+    int z;
+} xiang;
+typedef struct node //????????
+{
+    xiang data;
+    struct node *next;
+} node;
+node *getbeforenowb(node *h, int ci);
+node *shuru();
+void jiafa(node *h1, node *h2);
+void shuchu(node *h);
+node *reverse(node *head);
+void deletee(node *h);
+int main()
+{
+    node *h1, *h2;
+    printf("???????????????,??????,????????3X^5??????????????3 5???????????????????????????0 0:\n");
+    h1 = shuru();
+    printf("???????????????:\n");
+    h2 = shuru();
+    jiafa(h1, h2);
+    shuchu(h1); //??????
+    printf("After reversed:\n");
+    if (h1->next != NULL)
+    {
+        h1 = reverse(h1->next);
+        shuchu(h1);
+    }
+    else
+    {
+        printf("A(x)+B(x)=0\n");
+    }
+    deletee(h1);
+}
+void deletee(node *h)
+{
+    node *p = h->next;
+    while (p != NULL)
+    {
+        node *temp = p;
+        p = p->next;
+        free(temp);
+    }
+    free(h);
+}
+node *shuru()
+{
+    node *h = (node *)malloc(sizeof(node)), *temp, *p;
+    int b;
+    h->next = NULL;
+    p = h->next;
+    float datas;
+    int i = 0;
+    while (printf("?????%d????:\n", ++i) && scanf("%f %d", &datas, &b) == 2 && datas != 0)
+    {
+        if (temp = (node *)malloc(sizeof(node)))
+        {
+            temp->data.x = datas;
+            temp->data.z = b;
+            temp->next = p;
+            h->next = temp;
+            p = temp;
+            printf("??????%.1fX^%d?????\n", datas, b);
+            getchar();
+        }
+        else
+        {
+            printf("?????????!\n");
+            exit(0);
+        }
+    }
+    p = h->next;
+    printf("??????????:\n");
+    while (p || !printf("\n"))
+    {
+        printf("%.1fX^%d  ", p->data.x, p->data.z);
+        p = p->next;
+    }
+    return h;
+}
+void shuchu(node *h)
+{
+    node *p = h->next;
+    int cnt = 0;
+    printf("A(x)+B(x)=");
+    if (p == NULL)
+    {
+        printf("%c", '0');
+    }
+    while (p != NULL)
+    {
+        if (p->data.x == 0)
+        {
+            p = p->next;
+            continue;
+        }
+        if (cnt != 0)
+        {
+            if (p->data.x > 0)
+                printf("+");
+            if (p->data.z == 0)
+                printf("%3.1f", p->data.x);
+            else if (p->data.x == 1.0)
+                printf("X^%d", p->data.z);
+            else if (p->data.z == 1)
+                printf("%3.1fX", p->data.x);
+            else
+                printf("%3.1fX^%d", p->data.x, p->data.z);
+            p = p->next;
+        }
+        else
+        {
+            printf("%3.1fX^%d", p->data.x, p->data.z);
+            p = p->next;
+            cnt = 1;
+        }
+    }
+    printf("\n");
+}
+void jiafa(node *h1, node *h2) //????h1 h2????????
+{
+    node *p1, *beforep1 = h1, *beforep2, *p2; // p1 p2??????h1 h2???????  beforep1 beforep2??????p1 p2??????????????p1??p2???????????
+    p1 = h1->next;                            //??????????
+    while (p1)                                //????h1????
+    {
+        beforep2 = getbeforenowb(h2, p1->data.z); //????????????h1????????h2?????????????????????
+        if (beforep2)                             //?????
+        {
+            p2 = beforep2->next;                // p2????h2????p1???????????
+            if (p2->data.x + p1->data.x == 0.0) //???????????
+            {
+                beforep2->next = p2->next; //???p2???
+                free(p2);
+                beforep1->next = p1->next; //???p1???
+                free(p1);
+                p1 = beforep1->next; //?????????h1???
+            }
+            else //??????????
+            {
+                p1->data.x += p2->data.x; //??p2????????p1??
+                beforep1 = p1;
+                p1 = p1->next;             //?????????h1???
+                beforep2->next = p2->next; //???p2???
+                free(p2);
+            }
+        }
+        else //??????h2????????????????????????????????h1???
+        {
+            beforep1 = p1;
+            p1 = p1->next;
+        }
+    }
+    beforep1->next = h2->next; //???h2????????????????h1????§Ö????????
+}
+node *getbeforenowb(node *h, int ci) //????????h2????????h1????§Õ?????????????????
+{
+    node *p = h;
+    while (p->next != NULL) //????????????¦Â
+    {
+        if (p->next->data.z == ci) //????????????
+            return p;
+        p = p->next;
+    }
+    return NULL; //?????????????NULL
+}
+node *reverse(node *head)
+{
+    node *p, *q, *r;
+    p = head;
+    q = p->next;
+    if (q == NULL)
+    {
+        node *h = (node *)malloc(sizeof(node));
+        h->next = p;
+        return h;
+    }
+    r = q->next;
+    if (r == NULL)
+    {
+        q->next = p;
+        p->next = NULL;
+        node *h=(node *)malloc(sizeof(node));
+        h->next=q;
+        return h;
+    }
+    while (r != NULL)
+    {
+        q->next = p;
+        p = q;
+        q = r;
+        r = r->next;
+    }
+    q->next = p;
+    head->next = NULL;
+    node *h = (node *)malloc(sizeof(node));
+    h->next = q;
+    return h;
+}

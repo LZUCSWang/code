@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2602605d-29aa-4133-911e-d4b69342ed36" name="JDB">
+        <fileTransfer rootFolder="/home/stu_wxy" accessType="SFTP" host="114.115.218.41" port="5942" sshConfigId="b76f0a23-9d1a-41cc-b7cc-d77ce7e370d2" sshConfig="stu_wxy@114.115.218.41:5942 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

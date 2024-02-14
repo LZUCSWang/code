@@ -1,0 +1,6 @@
+﻿  Student.cpp
+D:\code\C+++C\c++\10\Student\Student\Student.cpp(23,92): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\Student\Student\Student.cpp(26,86): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\Student\Student\Student.cpp(37,78): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\Student\Student\Student.cpp(40,72): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  Student.vcxproj -> D:\code\C+++C\c++\10\Student\x64\Debug\Student.exe

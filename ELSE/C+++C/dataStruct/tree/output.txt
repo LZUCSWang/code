@@ -1,0 +1,8 @@
+Preorder recursion:		abdefgchikj
+Medium order recursion:		bfegdahikcj
+Postorder recursion:		fgedbkihjca
+Preorder none recursion:	abdefgchikj
+Medium order none recursion:	bfegdahikcj
+Postorder none recursion:	fgedbkihjca
+level traversal:		abcdhjeifgk
+depth of tree:			5

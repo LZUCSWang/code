@@ -1,0 +1,120 @@
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+1 2 3 [4]
+1 2 3 4 []
+1 2 3 4 []
+1 2 3 [4]
+1 2 3 4 []
+1 2 3 4 []
+1 2 3 3 4
+None
+
+spam 99 ['eggs']
+spam99['eggs']
+spam,99,['eggs']
+spam 99 ['eggs']spam 99 ['eggs']spam 99 ['eggs']
+spam 99 ['eggs']...
+spam...99...['eggs']!
+spam...99...['eggs']!
+spam...99...['eggs']
+
+Result: 3.1416, 00042
+Result: 3.1416, 00042
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+range(3, 6)
+range(3, 6)
+1 2 3 [4]
+1 2 3 4 []
+1 2 3 4 []
+1 2 3 3 4
+range(3, 6)
+None
+
+spam 99 ['eggs']
+spam99['eggs']
+spam,99,['eggs']
+spam 99 ['eggs']spam 99 ['eggs']spam 99 ['eggs']
+spam 99 ['eggs']...
+spam...99...['eggs']!
+spam...99...['eggs']!
+spam...99...['eggs']
+
+Result: 3.1416, 00042
+Result: 3.1416, 00042
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+range(3, 6)
+[1, 2, 3, 3, 4, 5]
+1 2 3 [4]
+1 2 3 4 []
+1 2 3 4 []
+1 2 3 3 4
+None
+
+spam 99 ['eggs']
+spam99['eggs']
+spam,99,['eggs']
+spam 99 ['eggs']spam 99 ['eggs']spam 99 ['eggs']
+spam 99 ['eggs']...
+spam...99...['eggs']!
+spam...99...['eggs']!
+spam...99...['eggs']
+
+Result: 3.1416, 00042
+Result: 3.1416, 00042
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+range(3, 6)
+1 2 3 [4]
+1 2 3 4 []
+1 2 3 4 []
+1 2 3 3 4
+None
+
+spam 99 ['eggs']
+spam99['eggs']
+spam,99,['eggs']
+spam 99 ['eggs']spam 99 ['eggs']spam 99 ['eggs']
+spam 99 ['eggs']...
+spam...99...['eggs']!
+spam...99...['eggs']!
+spam...99...['eggs']
+
+Result: 3.1416, 00042
+Result: 3.1416, 00042
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']
+1 2 3 [4]
+1 2 3 4 []
+1 2 3 4 []
+1 2 3 3 4
+None
+
+spam 99 ['eggs']
+spam99['eggs']
+spam,99,['eggs']
+spam 99 ['eggs']spam 99 ['eggs']spam 99 ['eggs']
+spam 99 ['eggs']...
+spam...99...['eggs']!
+spam...99...['eggs']!
+spam...99...['eggs']
+
+Result: 3.1416, 00042
+Result: 3.1416, 00042
+spam 99 ['eggs']
+spam 99 ['eggs']
+spam 99 ['eggs']

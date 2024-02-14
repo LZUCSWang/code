@@ -1,0 +1,11 @@
+﻿  ALG_EMO_MOEAD.cpp
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(91,60): warning C4474: sprintf_s: 格式字符串中传递的参数太多
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(91,60): message : 占位符和其参数预计 0 可变参数，但提供的却是 1 参数
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(117,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(150,13): warning C4018: “<”: 有符号/无符号不匹配
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(182,17): warning C4018: “<”: 有符号/无符号不匹配
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(215,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(251,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(419,26): warning C4018: “<”: 有符号/无符号不匹配
+D:\MOEAD2007\EMO-D\MOEAD\ALG_EMO_MOEAD.cpp(436,22): warning C4018: “<”: 有符号/无符号不匹配
+  MOEAD.vcxproj -> D:\MOEAD2007\EMO-D\Debug\MOEAD.exe

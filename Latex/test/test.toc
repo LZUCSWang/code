@@ -1,0 +1,9 @@
+\beamer@sectionintoc {1}{绪论}{3}{0}{1}
+\beamer@sectionintoc {2}{问题建模}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{多无人机协同的草原修复问题}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{多无人机协同的草原修复面积最大化模型}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{数学模型}{9}{0}{2}
+\beamer@sectionintoc {3}{求解方法}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{基于强化学习的最优路径规划}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{多无人机协同调度算法}{13}{0}{3}
+\beamer@sectionintoc {4}{仿真结果}{14}{0}{4}

@@ -1,0 +1,231 @@
+`timescale 1ns / 1ps
+`define PERIOD 100 
+//`include "defines.v"
+//////////////////////////////////////////////////////////////////////////////////
+// Company:
+// Engineer:
+//
+// Create Date: 2023/05/07 01:22:44
+// Design Name:
+// Module Name: cpu_tb
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+//
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module cpu_tb();
+    reg										m_clk,								m_rst;
+    reg[31:0] m_iwishbone_data_i;
+    reg m_iwishbone_ack_i;
+    wire[31:0] m_iwishbone_addr_o;
+    wire[31:0] m_iwishbone_data_o;
+    wire m_iwishbone_we_o;
+    wire[3:0] m_iwishbone_sel_o;
+    wire m_iwishbone_stb_o;
+    wire m_iwishbone_cyc_o;
+    reg[31:0] m_dwishbone_data_i;
+    reg m_dwishbone_ack_i;
+    wire[31:0] m_dwishbone_addr_o;
+    wire[31:0] m_dwishbone_data_o;
+    wire m_dwishbone_we_o;
+    wire[3:0] m_dwishbone_sel_o;
+    wire m_dwishbone_stb_o;
+    wire m_dwishbone_cyc_o;
+    wire[31:0]				m_latest_mie;
+    wire[31:0]				m_latest_mstatus;
+    reg	m_interrupt_plic;
+    reg[30:0] m_exception_code_plic;
+    reg m_interrupt_clint;
+    reg[30:0] m_exception_code_clint;
+    openriscv my_openriscv(.clk(m_clk),
+    .rst(m_rst),
+    .iwishbone_data_i(m_iwishbone_data_i),
+    .iwishbone_ack_i(m_iwishbone_ack_i),
+    .iwishbone_addr_o(m_iwishbone_addr_o),
+    .iwishbone_data_o(m_iwishbone_data_o),
+    .iwishbone_we_o(m_iwishbone_we_o),
+    .iwishbone_sel_o(m_iwishbone_sel_o),
+    .iwishbone_stb_o(m_iwishbone_stb_o),
+    .iwishbone_cyc_o(m_iwishbone_cyc_o),
+    .dwishbone_data_i(m_dwishbone_data_i),
+    .dwishbone_ack_i(m_dwishbone_ack_i),
+    .dwishbone_addr_o(m_dwishbone_addr_o),
+    .dwishbone_data_o(m_dwishbone_data_o),
+    .dwishbone_we_o(m_dwishbone_we_o),
+    .dwishbone_sel_o(m_dwishbone_sel_o),
+    .dwishbone_stb_o(m_dwishbone_stb_o),
+    .dwishbone_cyc_o(m_dwishbone_cyc_o),
+    .latest_mie(m_latest_mie),
+    .latest_mstatus(m_latest_mstatus),
+    .interrupt_plic(m_interrupt_plic),
+    .exception_code_plic(m_exception_code_plic),
+    .interrupt_clint(m_interrupt_clint),
+    .exception_code_clint(m_exception_code_clint)
+    );
+    always #(`PERIOD/2) m_clk=~m_clk; 
+    
+     integer test; 
+ reg [(3*8):0] mnemonic; //array that holds 3 8-bit ASCII characters 
+ reg [12:0] PC_addr,IR_addr; 
+ wire [7:0] data; 
+ wire [12:0] addr; 
+ wire rd,wr,halt,ram_sel,rom_sel; 
+ ram tb_ram(.addr(addr[9:0]),.read(rd),.write(wr),.ena(ram_sel),.data(data)); 
+rom tb_rom(.addr(addr),.read(rd),.ena(rom_sel),.data(data));
+decoder tb_decoder(.addr(addr),.ram_sel(ram_sel),.rom_sel(rom_sel)); 
+    initial
+    begin
+        m_clk = 1'b1;
+        $timeformat ( -9, 1, " ns", 12); 
+//        m_rst = 1'b0;
+         display_debug_message; 
+     sys_reset; 
+          test1; 
+     $stop;
+     test2; 
+     $stop; 
+     test3; 
+     $stop; 
+    end
+    task display_debug_message; 
+     begin 
+         $display("\n******************************************************"); 
+         $display("* THE FOLLOWING DEBUG TASK ARE AVAILABLE: *"); 
+         $display("* \"test1; \" to load the 1st diagnostic progran. *"); 
+         $display("* \"test2; \" to load the 2nd diagnostic program. *"); 
+         $display("* \"test3; \" to load the Fibonacci program. *"); 
+         $display("******************************************************\n"); 
+     end 
+endtask
+task sys_reset; 
+     begin 
+        m_rst = 0; 
+         #(`PERIOD*0.7) m_rst = 1; 
+         #(1.5*`PERIOD) m_rst = 0; 
+     end 
+endtask
+
+task test1; 
+     begin 
+         test = 0; 
+         //disable MONITOR; 
+         $readmemb ("test1.pro", tb_rom.memory); 
+         $display("rom loaded successfully!"); 
+         $readmemb("test1.dat",tb_ram.ram); 
+         $display("ram loaded successfully!"); 
+         #1 test = 1; 
+         #14800 ; 
+         sys_reset; 
+     end 
+ endtask
+ 
+ task test2; 
+     begin 
+         test = 0; 
+         disable MONITOR; 
+         $readmemb("test2.pro",tb_rom.memory); 
+         $display("rom loaded successfully!"); 
+         $readmemb("test2.dat",tb_ram.ram); 
+         $display("ram loaded successfully!"); 
+         #1 test = 2; 
+         #11600; 
+         sys_reset;
+     end 
+ endtask
+ 
+task test3; 
+     begin 
+         test = 0; 
+         disable MONITOR; 
+         $readmemb("test3.pro",tb_rom.memory); 
+         $display("rom loaded successfully!"); 
+         $readmemb("test3.dat",tb_ram.ram); 
+         $display("ram loaded successfully!"); 
+         #1 test = 3; 
+         #94000; 
+         sys_reset; 
+     end 
+endtask
+
+always @(test) 
+ begin: MONITOR 
+     case (test) 
+         1: begin //display results when running test 1 
+             $display("\n*** RUNNING CPUtest1 - The Basic CPU Diagnostic Program ***"); 
+             $display("\n TIME PC INSTR ADDR DATA "); 
+             $display(" ---------- ---- ----- ----- ----- "); 
+             while (test == 1) 
+                 @(cpu_tb.my_addr.pc_addr)//fixed 
+                 if ((cpu_tb.my_addr.pc_addr%2==1)&& (cpu_tb.my_addr.fetch == 1))
+                 //if ((cpu_tb.my_addr.pc_addr%2 == 1)&&(cpu_tb.my_addr.fetch == 1))//fixed 
+                    begin 
+                         # 60 PC_addr<=cpu_tb.my_addr.pc_addr-1; 
+                         IR_addr <=cpu_tb.my_addr.ir_addr; 
+                         # 340 $display("%t %h %s %h %h",$time,PC_addr,mnemonic,IR_addr,data );
+                         //HERE DATA HAS BEEN CHANGED T-CPU-M-REGISTER.DATA 
+                     end 
+         end
+         2: begin 
+             $display("\n*** RUNNING CPUtest2 - The Advanced CPU Diagnostic Program ***"); 
+             $display("\n TIME PC INSTR ADDR DATA "); 
+             $display(" ---------- --- ----- ----- ---- "); 
+             while (test == 2) 
+                @(cpu_tb.my_addr.pc_addr)
+                if ((cpu_tb.my_addr.pc_addr%2 == 1) 
+                        && (cpu_tb.my_addr.fetch == 1)) 
+                     begin 
+                         # 60 PC_addr = cpu_tb.my_addr.pc_addr - 1 ; 
+                         IR_addr = cpu_tb.my_addr.ir_addr; 
+                         # 340 $display("%t %h %s %h %h", $time, PC_addr, 
+                         mnemonic, IR_addr, data ); 
+                     end 
+                     
+            end
+         3: begin 
+                 $display("\n*** RUNNING CPUtest3 - An Executable Program ***"); 
+                 $display("*** This program should calculate the fibonacci ***"); 
+                 $display("\n TIME FIBONACCI NUMBER"); 
+                 $display( " --------- -----------------"); 
+                 while (test == 3) 
+                     begin 
+                         wait ( cpu_tb.my_alu.opcode == 3'h1) // display Fib. No. at end of program loop 
+                         $display("%t %d", $time,tb_ram.ram[10'h2]); 
+                         wait ( cpu_tb.my_alu.opcode != 3'h1); 
+                     end 
+               end 
+     endcase
+ end
+ 
+//--------------------------------------------------------------------------------
+always @(posedge halt) //STOP when HALT instruction decoded 
+     begin 
+         #500 
+         $display("\n***********************************************************"); 
+         $display("* A HALT INSTRUCTION WAS PROCESSED !!! *"); 
+         $display("***********************************************************\n"); 
+     end 
+
+always @(cpu_tb.my_alu.opcode) 
+     //get an ASCII mnemonic for each opcode 
+     case(cpu_tb.my_alu.opcode) 
+     3'b000 : mnemonic ="HLT"; 
+     3'h1 : mnemonic = "SKZ"; 
+     3'h2 : mnemonic = "ADD"; 
+     3'h3 : mnemonic = "AND"; 
+     3'h4 : mnemonic = "XOR"; 
+     3'h5 : mnemonic = "LDA"; 
+     3'h6 : mnemonic = "STO"; 
+     3'h7 : mnemonic = "JMP"; 
+     default : mnemonic = "???"; 
+     endcase
+
+endmodule

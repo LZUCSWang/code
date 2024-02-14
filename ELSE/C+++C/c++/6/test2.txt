@@ -1,0 +1,27 @@
+1
+zhang
+20
+male
+Build 305-503
+6081202
+tutor（助教）
+普通职工
+6800
+1
+chen
+38
+male
+Build 3A-302
+6088132
+associate professor（副教授）
+副院长
+9000
+1
+fan
+30
+female
+Build 2A-202
+6088099
+lectuer（讲师）
+教研室主任
+10000

@@ -1,0 +1,15 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ALU_ADD: alu_result = 00000003
+ALU_SUB: alu_result = 00000002
+ALU_SLT: alu_result = 00000001
+ALU_SLTU: alu_result = 00000001
+ALU_AND: alu_result = 00000000
+ALU_NOR: alu_result = 00000000
+ALU_OR: alu_result = ffffffff
+ALU_XOR: alu_result = 95511559
+ALU_SLL: alu_result = 00000008
+ALU_SRL: alu_result = 0f000000
+ALU_SRA: alu_result = ff000000
+ALU_LUI: alu_result = 12340000
+$finish called at time : 120 ns : File "D:/code/CE/4/4/4.srcs/sim_1/new/tb.v" Line 90

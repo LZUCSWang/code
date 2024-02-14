@@ -1,0 +1,10 @@
+﻿  学生管理系统.cpp
+D:\code\C+++C\c++\10\学生管理系统\学生管理系统\学生管理系统.cpp(23,92): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\学生管理系统\学生管理系统\学生管理系统.cpp(26,86): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\学生管理系统\学生管理系统\学生管理系统.cpp(37,78): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\C+++C\c++\10\学生管理系统\学生管理系统\学生管理系统.cpp(40,72): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 556 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  学生管理系统.vcxproj -> D:\code\C+++C\c++\10\学生管理系统\x64\Release\学生管理系统.exe

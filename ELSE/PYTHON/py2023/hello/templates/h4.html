@@ -1,0 +1,9 @@
+
+<form action="/h4/" method="post">
+    <select name='user'>
+        {% for name in data %}
+        <option value="{{name}}">{{name}}</option>
+        {% endfor %}
+    </select>
+    <input type='submit' value="提交">
+<form>

@@ -1,0 +1,40 @@
+2005001
+zhangesan 
+Male
+85 年11 月
+05 级
+jy01
+computer 
+application
+2005002
+lihuan
+Male
+84 年11 月
+05级
+tx02
+math
+application
+2005003
+wang
+Female
+85 年7 月
+05 级
+jy01
+computer
+software
+2005004
+zhan
+Male
+85 年11 月
+05 级
+jy02
+SCI
+software
+2005005
+song
+Female
+85 年11 月
+05级
+tx02
+math
+application

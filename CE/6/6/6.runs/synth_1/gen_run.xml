@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1698941852">
+  <File Type="PA-TCL" Name="single_cycle_cpu_display.tcl"/>
+  <File Type="REPORTS-TCL" Name="single_cycle_cpu_display_reports.tcl"/>
+  <File Type="RDS-RDS" Name="single_cycle_cpu_display.vds"/>
+  <File Type="RDS-UTIL" Name="single_cycle_cpu_display_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="single_cycle_cpu_display_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="single_cycle_cpu_display.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/lcd_module.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/lcd_module.dcp"/>
+        <Attr Name="ImportTime" Val="1694133682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/source/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../4/source/adder.v"/>
+        <Attr Name="ImportTime" Val="1695113701"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/source/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../4/source/alu.v"/>
+        <Attr Name="ImportTime" Val="1696725487"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/3.source/data_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../3/3.source/data_ram.v"/>
+        <Attr Name="ImportTime" Val="1695343412"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/3.source/inst_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../3/3.source/inst_rom.v"/>
+        <Attr Name="ImportTime" Val="1695343410"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/3.source/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../3/3.source/regfile.v"/>
+        <Attr Name="ImportTime" Val="1695343413"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sigle_cycle_cpu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/single_cycle_cpu_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/single_cycle_cpu_display.v"/>
+        <Attr Name="ImportTime" Val="1698367079"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="single_cycle_cpu_display"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/src/single_cycle_cpu.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/single_cycle_cpu.xdc"/>
+        <Attr Name="ImportTime" Val="1698367079"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

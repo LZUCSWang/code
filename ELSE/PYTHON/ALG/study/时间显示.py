@@ -1,0 +1,9 @@
+ms=int(input())
+s=ms//1000
+s%=24*60*60
+print(s)
+s1=s%60
+s//=60
+min1=s%60
+h1=s//60
+print("{:02d}:{:02d}:{:02d}".format(h1,min1,s1))

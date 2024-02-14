@@ -1,0 +1,523 @@
+A052 	 A001 	 1253 	 25 	 2555 	 5
+Good relationship(such as friends,colleagues)
+
+A052 	 A010 	 513 	 13 	 875 	 3
+Just acquaintance
+
+A052 	 A014 	 21880 	 276 	 43670 	 10
+Close relationships(such as family,bestie)
+
+A052 	 A031 	 261 	 4 	 318 	 2
+Just acquaintance
+
+A053 	 A052 	 1125 	 20 	 2002 	 5
+Good relationship(such as friends,colleagues)
+
+A055 	 A052 	 465 	 7 	 580 	 3
+Just acquaintance
+
+A060 	 A004 	 217 	 2 	 185 	 1
+Just acquaintance
+
+A062 	 A000 	 834 	 25 	 2300 	 5
+Good relationship(such as friends,colleagues)
+
+A062 	 A003 	 2016 	 22 	 2258 	 5
+Good relationship(such as friends,colleagues)
+
+A062 	 A004 	 457 	 8 	 625 	 3
+Just acquaintance
+
+A062 	 A006 	 6007 	 16 	 2349 	 5
+Good relationship(such as friends,colleagues)
+
+A062 	 A008 	 478 	 8 	 620 	 3
+Just acquaintance
+
+A062 	 A012 	 2481 	 57 	 6672 	 7
+Good relationship(such as friends,colleagues)
+
+A062 	 A017 	 787 	 22 	 1673 	 4
+Just acquaintance
+
+A062 	 A019 	 37 	 6 	 85 	 1
+Just acquaintance
+
+A062 	 A023 	 13226 	 83 	 13559 	 10
+Close relationships(such as family,bestie)
+
+A062 	 A026 	 1023 	 10 	 878 	 3
+Just acquaintance
+
+A062 	 A031 	 4770 	 53 	 7024 	 8
+Close relationships(such as family,bestie)
+A062 maybe know A014 from A031
+
+A062 	 A033 	 2623 	 66 	 6636 	 7
+Good relationship(such as friends,colleagues)
+
+A062 	 A041 	 4754 	 40 	 5240 	 7
+Good relationship(such as friends,colleagues)
+
+A062 	 A042 	 869 	 17 	 1589 	 4
+Just acquaintance
+
+A062 	 A044 	 668 	 20 	 1858 	 4
+Just acquaintance
+
+A062 	 A046 	 4766 	 23 	 2818 	 5
+Good relationship(such as friends,colleagues)
+
+A062 	 A049 	 328 	 4 	 370 	 2
+Just acquaintance
+
+A064 	 A011 	 694 	 17 	 1663 	 4
+Just acquaintance
+A064 maybe know A062 from A011
+
+A064 	 A020 	 320 	 24 	 1456 	 4
+Just acquaintance
+A064 maybe know A062 from A020
+
+A064 	 A026 	 358 	 4 	 300 	 2
+Just acquaintance
+A064 maybe know A023 from A026
+
+A064 	 A047 	 457 	 3 	 268 	 2
+Just acquaintance
+A064 maybe know A062 from A047
+
+A065 	 A062 	 2930 	 70 	 8357 	 8
+Close relationships(such as family,bestie)
+
+A069 	 A062 	 968 	 23 	 2258 	 5
+Good relationship(such as friends,colleagues)
+
+A072 	 A002 	 933 	 17 	 1400 	 4
+Just acquaintance
+A072 maybe know A062 from A002
+
+A072 	 A004 	 816 	 7 	 545 	 3
+Just acquaintance
+A072 maybe know A023 from A004
+
+A072 	 A006 	 357 	 8 	 573 	 3
+Just acquaintance
+A072 maybe know A023 from A006
+
+A072 	 A008 	 2125 	 23 	 2660 	 5
+Good relationship(such as friends,colleagues)
+A072 maybe know A023 from A008
+
+A072 	 A011 	 555 	 21 	 1687 	 4
+Just acquaintance
+
+A072 	 A013 	 1791 	 28 	 2996 	 5
+Good relationship(such as friends,colleagues)
+A072 maybe know A062 from A013
+
+A072 	 A019 	 42 	 9 	 100 	 1
+Just acquaintance
+A072 maybe know A023 from A019
+
+A072 	 A020 	 110 	 4 	 250 	 2
+Just acquaintance
+
+A072 	 A026 	 130 	 6 	 370 	 2
+Just acquaintance
+A072 maybe know A023 from A026
+
+A072 	 A028 	 1808 	 13 	 865 	 3
+Just acquaintance
+A072 maybe know A062 from A028
+
+A072 	 A032 	 289 	 91 	 1071 	 4
+Just acquaintance
+A072 maybe know A062 from A032
+
+A072 	 A041 	 61 	 1 	 93 	 1
+Just acquaintance
+A072 maybe know A023 from A041
+
+A072 	 A043 	 1730 	 34 	 3423 	 6
+Good relationship(such as friends,colleagues)
+A072 maybe know A062 from A043
+
+A072 	 A047 	 421 	 19 	 497 	 2
+Just acquaintance
+
+A072 	 A053 	 591 	 19 	 1677 	 4
+Just acquaintance
+A072 maybe know A014 from A053
+
+A072 	 A054 	 2605 	 69 	 8505 	 8
+Close relationships(such as family,bestie)
+A072 maybe know A062 from A054
+
+A072 	 A055 	 402 	 10 	 750 	 3
+Just acquaintance
+A072 maybe know A014 from A055
+
+A072 	 A057 	 3605 	 22 	 2429 	 5
+Good relationship(such as friends,colleagues)
+A072 maybe know A062 from A057
+
+A072 	 A068 	 616 	 33 	 1498 	 4
+Just acquaintance
+A072 maybe know A062 from A068
+
+A076 	 A064 	 1177 	 31 	 2317 	 5
+Good relationship(such as friends,colleagues)
+
+A076 	 A072 	 1509 	 18 	 1921 	 4
+Just acquaintance
+
+A077 	 A072 	 188 	 15 	 250 	 2
+Just acquaintance
+
+A078 	 A024 	 1315 	 13 	 1093 	 4
+Just acquaintance
+A078 maybe know A062 from A024
+
+A078 	 A063 	 4671 	 40 	 5224 	 7
+Good relationship(such as friends,colleagues)
+A078 maybe know A062 from A063
+
+A080 	 A062 	 5182 	 82 	 11034 	 10
+Close relationships(such as family,bestie)
+
+A081 	 A000 	 526 	 20 	 1593 	 4
+Just acquaintance
+A081 maybe know A023 from A000
+
+A081 	 A026 	 9542 	 266 	 34810 	 10
+Close relationships(such as family,bestie)
+A081 maybe know A023 from A026
+
+A081 	 A040 	 1966 	 102 	 10190 	 10
+Close relationships(such as family,bestie)
+A081 maybe know A062 from A040
+
+A081 	 A041 	 1121 	 27 	 2440 	 5
+Good relationship(such as friends,colleagues)
+A081 maybe know A023 from A041
+
+A081 	 A045 	 4380 	 138 	 15790 	 10
+Close relationships(such as family,bestie)
+A081 maybe know A062 from A045
+
+A081 	 A066 	 898 	 45 	 2640 	 5
+Good relationship(such as friends,colleagues)
+A081 maybe know A062 from A066
+
+A082 	 A028 	 3109 	 9 	 740 	 3
+Just acquaintance
+A082 maybe know A054 from A028
+
+A082 	 A076 	 59 	 2 	 135 	 1
+Just acquaintance
+A082 maybe know A054 from A076
+
+A083 	 A005 	 248 	 124 	 1240 	 4
+Just acquaintance
+A083 maybe know A062 from A005
+
+A083 	 A007 	 1954 	 17 	 1614 	 4
+Just acquaintance
+A083 maybe know A062 from A007
+
+A083 	 A009 	 1721 	 17 	 1977 	 4
+Just acquaintance
+A083 maybe know A062 from A009
+
+A083 	 A015 	 1424 	 19 	 1645 	 4
+Just acquaintance
+A083 maybe know A062 from A015
+
+A083 	 A016 	 836 	 20 	 1120 	 4
+Just acquaintance
+A083 maybe know A062 from A016
+
+A083 	 A018 	 1119 	 18 	 1974 	 4
+Just acquaintance
+A083 maybe know A062 from A018
+
+A083 	 A021 	 1607 	 27 	 2821 	 5
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A021
+
+A083 	 A022 	 9430 	 50 	 7340 	 8
+Close relationships(such as family,bestie)
+A083 maybe know A062 from A022
+
+A083 	 A025 	 862 	 14 	 1138 	 4
+Just acquaintance
+A083 maybe know A062 from A025
+
+A083 	 A027 	 1908 	 77 	 6831 	 7
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A027
+
+A083 	 A029 	 797 	 14 	 1125 	 4
+Just acquaintance
+A083 maybe know A062 from A029
+
+A083 	 A030 	 15010 	 83 	 14562 	 10
+Close relationships(such as family,bestie)
+A083 maybe know A062 from A030
+
+A083 	 A034 	 1783 	 31 	 3038 	 6
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A034
+
+A083 	 A035 	 265 	 15 	 258 	 2
+Just acquaintance
+A083 maybe know A062 from A035
+
+A083 	 A036 	 348 	 22 	 1309 	 4
+Just acquaintance
+A083 maybe know A062 from A036
+
+A083 	 A037 	 1408 	 54 	 2340 	 5
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A037
+
+A083 	 A038 	 2391 	 23 	 2254 	 5
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A038
+
+A083 	 A039 	 1310 	 18 	 1977 	 4
+Just acquaintance
+A083 maybe know A062 from A039
+
+A083 	 A048 	 4491 	 26 	 3224 	 6
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A048
+
+A083 	 A049 	 1314 	 10 	 880 	 3
+Just acquaintance
+A083 maybe know A023 from A049
+
+A083 	 A050 	 1615 	 60 	 4372 	 6
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A050
+
+A083 	 A051 	 5030 	 22 	 2457 	 5
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A051
+
+A083 	 A053 	 161 	 5 	 345 	 2
+Just acquaintance
+A083 maybe know A054 from A053
+
+A083 	 A056 	 2104 	 82 	 8397 	 8
+Close relationships(such as family,bestie)
+A083 maybe know A062 from A056
+
+A083 	 A058 	 1027 	 17 	 1851 	 4
+Just acquaintance
+A083 maybe know A062 from A058
+
+A083 	 A059 	 2986 	 38 	 5144 	 7
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A059
+
+A083 	 A061 	 2110 	 20 	 2352 	 5
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A061
+
+A083 	 A067 	 585 	 15 	 858 	 3
+Just acquaintance
+A083 maybe know A062 from A067
+
+A083 	 A070 	 8083 	 59 	 7804 	 8
+Close relationships(such as family,bestie)
+A083 maybe know A062 from A070
+
+A083 	 A071 	 2558 	 23 	 2597 	 5
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A071
+
+A083 	 A073 	 1668 	 14 	 1145 	 4
+Just acquaintance
+A083 maybe know A062 from A073
+
+A083 	 A074 	 894 	 26 	 1733 	 4
+Just acquaintance
+A083 maybe know A062 from A074
+
+A083 	 A075 	 3525 	 56 	 6584 	 7
+Good relationship(such as friends,colleagues)
+A083 maybe know A062 from A075
+
+A083 	 A076 	 285 	 5 	 410 	 2
+Just acquaintance
+A083 maybe know A054 from A076
+
+A083 	 A079 	 1337 	 15 	 1145 	 4
+Just acquaintance
+A083 maybe know A062 from A079
+
+A084 	 A083 	 2160 	 27 	 3182 	 6
+Good relationship(such as friends,colleagues)
+
+A085 	 A083 	 637 	 16 	 1418 	 4
+Just acquaintance
+
+A086 	 A064 	 1060 	 22 	 2324 	 5
+Good relationship(such as friends,colleagues)
+
+A086 	 A072 	 784 	 22 	 2093 	 5
+Good relationship(such as friends,colleagues)
+
+A087 	 A072 	 1434 	 30 	 1722 	 4
+Just acquaintance
+
+A088 	 A064 	 475 	 4 	 348 	 2
+Just acquaintance
+
+A088 	 A072 	 408 	 12 	 660 	 3
+Just acquaintance
+
+A089 	 A052 	 990 	 15 	 1080 	 4
+Just acquaintance
+
+A090 	 A083 	 5266 	 50 	 5312 	 7
+Good relationship(such as friends,colleagues)
+
+A091 	 A062 	 138 	 3 	 235 	 2
+Just acquaintance
+
+A091 	 A083 	 1240 	 32 	 2709 	 5
+Good relationship(such as friends,colleagues)
+
+A092 	 A081 	 2729 	 18 	 1921 	 4
+Just acquaintance
+A092 maybe know A062 from A081
+
+A093 	 A083 	 7941 	 77 	 11574 	 10
+Close relationships(such as family,bestie)
+
+A094 	 A062 	 225 	 19 	 763 	 3
+Just acquaintance
+
+A095 	 A072 	 596 	 15 	 1048 	 4
+Just acquaintance
+
+A096 	 A072 	 857 	 24 	 2230 	 5
+Good relationship(such as friends,colleagues)
+
+A096 	 A083 	 409 	 8 	 635 	 3
+Just acquaintance
+
+A097 	 A083 	 3360 	 86 	 8397 	 8
+Close relationships(such as family,bestie)
+
+A098 	 A083 	 49 	 15 	 130 	 1
+Just acquaintance
+
+A099 	 A083 	 3913 	 43 	 5016 	 7
+Good relationship(such as friends,colleagues)
+
+A100 	 A083 	 681 	 23 	 1925 	 4
+Just acquaintance
+
+A101 	 A062 	 310 	 17 	 1141 	 4
+Just acquaintance
+
+A101 	 A082 	 59 	 2 	 135 	 1
+Just acquaintance
+A101 maybe know A072 from A082
+
+A102 	 A062 	 1796 	 18 	 1715 	 4
+Just acquaintance
+
+A103 	 A062 	 1490 	 35 	 3608 	 6
+Good relationship(such as friends,colleagues)
+
+A104 	 A083 	 2003 	 36 	 3064 	 6
+Good relationship(such as friends,colleagues)
+
+A105 	 A083 	 1429 	 18 	 2051 	 5
+Good relationship(such as friends,colleagues)
+
+A106 	 A083 	 1363 	 37 	 3488 	 6
+Good relationship(such as friends,colleagues)
+
+A107 	 A062 	 188 	 4 	 305 	 2
+Just acquaintance
+
+A107 	 A064 	 229 	 10 	 575 	 3
+Just acquaintance
+
+A107 	 A072 	 43 	 3 	 140 	 1
+Just acquaintance
+
+A107 	 A083 	 5111 	 53 	 7112 	 8
+Close relationships(such as family,bestie)
+
+A108 	 A062 	 1822 	 21 	 2461 	 5
+Good relationship(such as friends,colleagues)
+
+A108 	 A072 	 97 	 1 	 93 	 1
+Just acquaintance
+
+A109 	 A062 	 1044 	 22 	 2198 	 5
+Good relationship(such as friends,colleagues)
+
+A110 	 A083 	 2175 	 18 	 1830 	 4
+Just acquaintance
+
+A111 	 A072 	 180 	 17 	 389 	 2
+Just acquaintance
+
+A112 	 A072 	 377 	 60 	 1128 	 4
+Just acquaintance
+
+A113 	 A083 	 327 	 22 	 910 	 3
+Just acquaintance
+
+A114 	 A078 	 716 	 22 	 1834 	 4
+Just acquaintance
+
+A115 	 A083 	 856 	 15 	 828 	 3
+Just acquaintance
+
+A116 	 A083 	 798 	 15 	 1140 	 4
+Just acquaintance
+
+A117 	 A064 	 546 	 13 	 853 	 3
+Just acquaintance
+A117 maybe know A072 from A064
+
+A118 	 A072 	 827 	 29 	 2566 	 5
+Good relationship(such as friends,colleagues)
+
+A118 	 A083 	 11984 	 348 	 44920 	 10
+Close relationships(such as family,bestie)
+
+A119 	 A083 	 1192 	 13 	 1195 	 4
+Just acquaintance
+A119 maybe know A072 from A083
+
+A120 	 A072 	 1017 	 10 	 743 	 3
+Just acquaintance
+
+A120 	 A083 	 155 	 7 	 245 	 2
+Just acquaintance
+
+A121 	 A083 	 903 	 21 	 1404 	 4
+Just acquaintance
+A121 maybe know A072 from A083
+
+A122 	 A083 	 734 	 14 	 985 	 3
+Just acquaintance
+A122 maybe know A072 from A083
+
+A123 	 A083 	 8673 	 203 	 27375 	 10
+Close relationships(such as family,bestie)
+A123 maybe know A072 from A083
+
+A124 	 A072 	 1863 	 62 	 5628 	 7
+Good relationship(such as friends,colleagues)
+
