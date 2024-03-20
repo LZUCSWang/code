@@ -1,0 +1,20 @@
+douyin:
+  cookie: passport_auth_status=271e38e86f8049d4bf665128aa3b630c%2C;passport_auth_status_ss=271e38e86f8049d4bf665128aa3b630c%2C;sid_guard=b33f3139864e82c45511e6d8e670fbde%7C1708914703%7C5184001%7CFri%2C+26-Apr-2024+02%3A31%3A44+GMT;uid_tt=757f65fa675979775eed03c7f2d94485;uid_tt_ss=757f65fa675979775eed03c7f2d94485;sid_tt=b33f3139864e82c45511e6d8e670fbde;sessionid=b33f3139864e82c45511e6d8e670fbde;sessionid_ss=b33f3139864e82c45511e6d8e670fbde;sid_ucp_v1=1.0.0-KDI4NDVmZTY1NDQ4ZTJlNTQzY2JjZDY2ZThmNTc2MThjYTIwYWY5ZmIKFwj9wvD8042oBxCP8O-uBhjvMTgGQPQHGgJsZiIgYjMzZjMxMzk4NjRlODJjNDU1MTFlNmQ4ZTY3MGZiZGU;ssid_ucp_v1=1.0.0-KDI4NDVmZTY1NDQ4ZTJlNTQzY2JjZDY2ZThmNTc2MThjYTIwYWY5ZmIKFwj9wvD8042oBxCP8O-uBhjvMTgGQPQHGgJsZiIgYjMzZjMxMzk4NjRlODJjNDU1MTFlNmQ4ZTY3MGZiZGU
+  max_connections: 5
+  max_counts: 0
+  max_retries: 5
+  max_tasks: 10
+  naming: '{create}_{desc}'
+  page_counts: 20
+  path: Download
+  timeout: 10
+tiktok:
+  cookie: null
+  max_connections: 5
+  max_counts: 0
+  max_retries: 5
+  max_tasks: 5
+  naming: '{create}_{desc}'
+  page_counts: 5
+  path: Download
+  timeout: 10

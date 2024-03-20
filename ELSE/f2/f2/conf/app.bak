@@ -1,0 +1,23 @@
+douyin:
+
+  cookie:
+  naming: '{create}_{desc}'
+  path: Download
+  timeout: 10
+  max_retries: 5
+  max_connections: 5
+  max_counts: 0
+  max_tasks: 10
+  page_counts: 20
+
+tiktok:
+
+  cookie:
+  max_connections: 5
+  max_counts: 0
+  max_retries: 5
+  max_tasks: 5
+  naming: '{create}_{desc}'
+  page_counts: 5
+  path: Download
+  timeout: 10
