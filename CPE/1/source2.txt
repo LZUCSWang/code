@@ -1,0 +1,11 @@
+//program 2: do some calculation.
+{
+	int a, b, c  ;
+	a = 5;		//positive number
+	b = -3;		//negative number
+	c = (a+b)*(a-b);//calculation
+	write c  ;	//output:16.
+}
+
+
+

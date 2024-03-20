@@ -1,0 +1,15 @@
+<A, id1>
+<=, op>
+<B, id2>
+<+, op>
+<C, id3>
+<*, op>
+<(, delimiter>
+<D, id4>
+<+, op>
+<(, delimiter>
+<E, id5>
+<+, op>
+<F, id6>
+<), delimiter>
+<), delimiter>

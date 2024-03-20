@@ -1,0 +1,34 @@
+<{, delimiter>
+<int, keyword>
+<a, identifier 1>
+<,, delimiter>
+<b, identifier 2>
+<,, delimiter>
+<c, identifier 3>
+<;, delimiter>
+<a, identifier 1>
+<=, operator>
+<5, constant>
+<;, delimiter>
+<b, identifier 2>
+<=, operator>
+<-3, constant>
+<;, delimiter>
+<c, identifier 3>
+<=, operator>
+<(, delimiter>
+<a, identifier 1>
+<+, operator>
+<b, identifier 2>
+<), delimiter>
+<*, operator>
+<(, delimiter>
+<a, identifier 1>
+<-, operator>
+<b, identifier 2>
+<), delimiter>
+<;, delimiter>
+<write, keyword>
+<c, identifier 3>
+<;, delimiter>
+<}, delimiter>

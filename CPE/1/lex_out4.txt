@@ -1,0 +1,79 @@
+<{, delimiter>
+<int, keyword>
+<a, identifier 1>
+<,, delimiter>
+<b, identifier 2>
+<,, delimiter>
+<c, identifier 3>
+<;, delimiter>
+<bool, keyword>
+<cond1, identifier 4>
+<,, delimiter>
+<cond2, identifier 5>
+<,, delimiter>
+<cond3, identifier 6>
+<;, delimiter>
+<read, keyword>
+<a, identifier 1>
+<;, delimiter>
+<read, keyword>
+<b, identifier 2>
+<;, delimiter>
+<read, keyword>
+<c, identifier 3>
+<;, delimiter>
+<cond1, identifier 4>
+<:=, operator>
+<a, identifier 1>
+<>=, operator>
+<b, identifier 2>
+<;, delimiter>
+<cond2, identifier 5>
+<:=, operator>
+<a, identifier 1>
+<>=, operator>
+<c, identifier 3>
+<;, delimiter>
+<cond3, identifier 6>
+<:=, operator>
+<b, identifier 2>
+<>=, operator>
+<c, identifier 3>
+<;, delimiter>
+<if, keyword>
+<cond1, identifier 4>
+<then, keyword>
+<if, keyword>
+<cond2, identifier 5>
+<then, keyword>
+<write, keyword>
+<a, identifier 1>
+<;, delimiter>
+<else, keyword>
+<write, keyword>
+<c, identifier 3>
+<;, delimiter>
+<cond1, identifier 4>
+<:=, operator>
+<a, identifier 1>
+<<, operator>
+<b, identifier 2>
+<;, delimiter>
+<if, keyword>
+<cond1, identifier 4>
+<then, keyword>
+<if, keyword>
+<cond3, identifier 6>
+<then, keyword>
+<write, keyword>
+<b, identifier 2>
+<;, delimiter>
+<else, keyword>
+<write, keyword>
+<c, identifier 3>
+<;, delimiter>
+<}, delimiter>
+
+
+
+

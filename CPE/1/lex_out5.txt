@@ -1,0 +1,29 @@
+<{, delimiter>
+<(, delimiter>
+<{, delimiter>
+<(, delimiter>
+<!, operator>
+<1, constant>
+<a4, identifier 1>
+<0, constant>
+<-2, constant>
+<a4, identifier 1>
+<:=, operator>
+<!, operator>
+<a4, identifier 1>
+<1, constant>
+<2, constant>
+<true, constant>
+<boolbool, identifier 2>
+<||, operator>
+----------------------------------error----------------------------------
+<), illegal bracket(2, 7)>
+<}, illegal bracket(2, 9)>
+<@, illegal unknown(3, 5)>
+<#, illegal unknown(3, 6)>
+<dsafsf_asdfaw, illegal identifier(4, 18)>
+<012, invalid constant(6, 8)>
+<123456789, invalid constant(9, 14)>
+<., illegal unknown(10, 6)>
+<|, illegal unknown(13, 7)>
+<}, illegal bracket(14, 1)>

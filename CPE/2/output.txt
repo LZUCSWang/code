@@ -1,0 +1,12 @@
+<{, delimiter>
+<a, identifier 1>
+<=, operator>
+<-1, constant>
+<;, delimiter>
+<b, identifier 2>
+<:=, operator>
+<a, identifier 1>
+<<=, operator>
+<0, constant>
+<;, delimiter>
+<}, delimiter>

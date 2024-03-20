@@ -33,21 +33,23 @@ def send_email(subject):
 def TargetWeb(url):
     option = webdriver.ChromeOptions()
     # option.binary_location = r'D:\\chrome-win64\\chrome.exe'
+    # option.add_argument(
+    #     r'--user-data-dir=C:\\Users\\wxy43\AppData\\Local\\Google\\Chrome\\User Data')  # 设置自己的浏览器数据路径
     option.add_argument(
-        r'--user-data-dir=C:\\Users\\wxy43\AppData\\Local\\Google\\Chrome\\User Data')  # 设置自己的浏览器数据路径
+        r'--user-data-dir=C:\\Users\\Administrator\AppData\\Local\\Google\\Chrome\\User Data')  # 设置自己的浏览器数据路径
     option.add_argument(
         "user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36'")
     option.add_experimental_option('excludeSwitches', ['enable-automation'])
     option.add_experimental_option('useAutomationExtension', False)
-<<<<<<< HEAD
     # option.add_argument('--headless')
     # option.add_argument('--no-sandbox')
     option.add_argument('--disable-gpu')
     # option.add_argument('--disable-dev-shm-usage')
 
     # 指定ChromeDriver的路径
-    chrome_driver_path = r'C:\\Users\wxy43\AppData\\Local\\Google\\Chrome\Application\\chromedriver.exe'
-    browser = webdriver.Chrome(executable_path=chrome_driver_path,options=option)
+    chrome_driver_path = r'C:\\Users\wxy43\wxy43\\Local\\Google\\Chrome\Application\\chromedriver.exe'
+    chrome_driver_path = r'C:\\Users\wxy43\Administrator\\Local\\Google\\Chrome\Application\\chromedriver.exe'
+    browser = webdriver.Chrome(options=option)
     browser.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
     "source": """
         Object.defineProperty(navigator, 'webdriver', {
@@ -56,15 +58,6 @@ def TargetWeb(url):
     """
     })
     browser.set_window_size(1920,1050)
-=======
-    # option.add_argument("headless")
-    # option.add_argument('--no-sandbox')
-    # option.add_argument('--disable-gpu')
-    # option.add_argument('--disable-dev-shm-usage')
-
-    browser = webdriver.Chrome(options=option)
-    browser.set_window_size(1000, 1000)
->>>>>>> 49c4a71e4177a62bcfec99ea70ea85a9f307e999
     browser.execute_cdp_cmd("Emulation.setGeolocationOverride", {
         "latitude": Location[0],
         "longitude": Location[1],
@@ -104,5 +97,5 @@ def TargetWeb(url):
 if __name__ == "__main__":
     print("开始执行")
 
-    TargetWeb(url)
-    # TargetWeb(test_url)
+    # TargetWeb(url)
+    TargetWeb(test_url)
