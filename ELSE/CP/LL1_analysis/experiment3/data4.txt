@@ -1,0 +1,4 @@
+S->AE|B
+E->B|ε
+A->aAb|e
+B->cBd|e
