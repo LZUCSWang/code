@@ -1,0 +1,139 @@
+LR0�酊殖�
+STMT->id := BOOL ; ，
+DECL->， int NAMES ; 
+JOIN->JOIN ， && NOT 
+DECL->bool ， NAMES ; 
+NAME->， id 
+STMT->read id ; ，
+EXPR->， EXPR ADD TERM 
+FACTOR->， id 
+DECLS->DECLS DECL ，
+BOOL->BOOL || JOIN ，
+NAMES->NAMES , ， NAME 
+NAMES->NAME ，
+STMT->write ， id ; 
+ADD->， + 
+DECL->int NAMES ， ; 
+JOIN->JOIN && NOT ，
+NOT->， REL 
+DECL->bool NAMES ; ，
+EXPR->EXPR ADD ， TERM 
+STMTS->STMTS ， STMT 
+STMT->if ， id then STMT 
+TERM->NEGA ，
+JOIN->NOT ，
+REL->， EXPR ROP ， EXPR 
+STMT->write id ; ，
+NOT->! ， REL 
+Start->， PROG 
+STMT->， id = EXPR ; 
+ROP->< ，
+STMT->if id then ， STMT 
+STMT->， while id do STMT 
+MUL->， / 
+REL->EXPR ROP EXPR 
+NEGA->FACTOR ，
+STMT->if ， id then STMT else STMT 
+STMT->， read id ; 
+NEGA->， - FACTOR 
+STMT->id = ， EXPR ; 
+BOOL->， BOOL || JOIN 
+ROP->， == 
+PROG->{ DECLS STMTS ， } 
+STMT->while id ， do STMT 
+STMT->{ ， STMTS STMT } 
+EXPR->TERM ，
+FACTOR->number ，
+JOIN->， JOIN && NOT 
+STMT->if id then ， STMT else ， STMT 
+DECL->， bool NAMES ; 
+STMT->read id ， ; 
+NEGA->- FACTOR ，
+STMT->id = EXPR ; ，
+BOOL->BOOL || ， JOIN 
+BOOL->JOIN ，
+ROP->!= ，
+STMT->while id do STMT ，
+NAMES->NAMES ， , NAME 
+STMT->{ STMTS STMT ， } 
+NAMES->， NAME 
+STMT->， write id ; 
+ADD->， - 
+JOIN->JOIN && ， NOT 
+STMT->if id then STMT else STMT 
+DECL->bool NAMES ， ; 
+STMTS->， STMTS STMT 
+FACTOR->( EXPR ， ) 
+STMTS->STMT ，
+STMT->， if id then STMT 
+TERM->， NEGA 
+JOIN->， NOT 
+STMT->write id ， ; 
+ROP->， > 
+STMT->id ， := BOOL ; 
+DECLS->，
+TERM->TERM ， MUL NEGA 
+NOT->， ! REL 
+STMTS->STMTS STMT ，
+ROP->， < 
+PROG->， { DECLS STMTS } 
+STMT->if id ， then STMT 
+MUL->* ，
+FACTOR->( ， EXPR ) 
+ROP->>= ，
+STMT->id := BOOL ， ; 
+STMT->， if id then STMT else STMT 
+TERM->TERM MUL NEGA ，
+NOT->! REL ，
+ROP-><= ，
+PROG->{ DECLS ， STMTS } 
+STMT->if id then STMT ，
+DECLS->DECLS ， DECL 
+STMT->， { STMTS STMT } 
+MUL->/ ，
+FACTOR->( EXPR ) ，
+EXPR->， TERM 
+FACTOR->， number 
+STMT->if id ， then STMT else STMT 
+DECL->int ， NAMES ; 
+BOOL->BOOL ， || JOIN 
+NAME->id ，
+EXPR->EXPR ， ADD TERM 
+FACTOR->id ，
+BOOL->， JOIN 
+ROP->== ，
+ROP->， != 
+PROG->{ DECLS STMTS } ，
+STMT->{ STMTS ， STMT } 
+NAMES->NAMES , NAME ，
+ADD->+ ，
+STMT->if id then STMT ， else STMT 
+DECL->int NAMES ; ，
+NOT->REL ，
+EXPR->EXPR ADD TERM ，
+STMTS->， STMT 
+STMT->{ STMTS STMT } ，
+REL->EXPR ， ROP EXPR 
+ADD->- ，
+STMT->， id := BOOL ; 
+TERM->， TERM MUL NEGA 
+STMT->if id then STMT else STMT 
+NEGA->， FACTOR 
+Start->PROG ，
+STMT->id ， = EXPR ; 
+MUL->， * 
+ROP->> ，
+STMT->while ， id do STMT 
+FACTOR->， ( EXPR ) 
+REL->EXPR ROP EXPR 
+ROP->， >= 
+STMT->id := ， BOOL ; 
+TERM->TERM MUL ， NEGA 
+STMT->read ， id ; 
+NEGA->- ， FACTOR 
+ROP->， <= 
+PROG->{ ， DECLS STMTS } 
+STMT->id = EXPR ， ; 
+DECLS->， DECLS DECL 
+STMT->while id do ， STMT 
+NAMES->， NAMES , NAME 

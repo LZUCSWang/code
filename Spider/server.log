@@ -1,0 +1,491 @@
+Running BrowserMob Proxy using LittleProxy implementation. To revert to the legacy implementation, run the proxy with the command-line option '--use-littleproxy false'.
+[INFO  2024-04-04T14:46:39,638 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2024-04-04T14:46:39,662 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2024-04-04T14:46:39,852 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[WARN  2024-04-04T14:46:39,969 org.eclipse.jetty.util.log] (main) FAILED SelectChannelConnector@0.0.0.0:9000: java.net.BindException: Address already in use: bind 
+[WARN  2024-04-04T14:46:39,969 org.eclipse.jetty.util.log] (main) FAILED org.eclipse.jetty.server.Server@75cd8043: java.net.BindException: Address already in use: bind 
+[ERROR 2024-04-04T14:46:39,969 net.lightbody.bmp.proxy.Main] (main) Failed to start Jetty server. Aborting. java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_401]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[?:1.8.0_401]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[?:1.8.0_401]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[?:1.8.0_401]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:162) ~[browsermob-dist-2.1.4.jar:?]
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:356) ~[browsermob-dist-2.1.4.jar:?]
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:240) ~[browsermob-dist-2.1.4.jar:?]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55) ~[browsermob-dist-2.1.4.jar:?]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:269) ~[browsermob-dist-2.1.4.jar:?]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55) ~[browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.proxy.Main.main(Main.java:64) [browsermob-dist-2.1.4.jar:?]
+
+Exception in thread "main" net.lightbody.bmp.exception.JettyException: Unable to start Jetty server
+	at net.lightbody.bmp.proxy.Main.main(Main.java:68)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:162)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:356)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:240)
+	at org.eclipse.jetty.util.com[WARN  2024-04-04T14:46:41,544 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:41,545 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProx终止批处理操作吗(Y/N)? ^C) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:41,600 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) No content type specified in response from /csp_report. Content will be treated as application/octet-stream 
+[WARN  2024-04-04T14:46:41,618 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-5) No content type specified in response from /csp_report. Content will be treated as application/octet-stream 
+[WARN  2024-04-04T14:46:41,633 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) No content type specified in response from /csp_report. Content will be treated as application/octet-stream 
+[WARN  2024-04-04T14:46:41,638 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) No content type specified in response from /csp_report. Content will be treated as application/octet-stream 
+[WARN  2024-04-04T14:46:42,180 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,181 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:42,181 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,181 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:42,401 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,401 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:42,415 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,415 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:42,666 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,666 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:42,690 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,690 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:42,690 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,690 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[INFO  2024-04-04T14:46:42,781 net.lightbody.bmp.util.BrowserMobHttpUtil] (LittleProxy-1-ProxyToServerWorker-1) Unable to parse Content-Type header: application/json;. Content-Type header will be ignored. java.lang.IllegalArgumentException: Could not parse 'application/json;'
+	at com.google.common.net.MediaType.parse(MediaType.java:800) ~[browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.util.BrowserMobHttpUtil.readCharsetInContentTypeHeader(BrowserMobHttpUtil.java:187) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.HarCaptureFilter.captureResponseContent(HarCaptureFilter.java:464) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.HarCaptureFilter.serverToProxyResponse(HarCaptureFilter.java:267) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.BrowserMobHttpFilterChain.serverToProxyResponse(BrowserMobHttpFilterChain.java:123) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.respond(ClientToProxyConnection.java:418) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.respondWith(ProxyToServerConnection.java:519) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.readHTTPChunk(ProxyToServerConnection.java:251) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.readHTTP(ProxyConnection.java:146) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.read(ProxyConnection.java:120) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.read(ProxyToServerConnection.java:214) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.channelRead0(ProxyConnection.java:587) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection$ResponseReadMonitor.channelRead(ProxyConnection.java:738) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection$BytesReadMonitor.channelRead(ProxyConnection.java:692) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1069) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:902) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:411) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:248) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:129) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+Caused by: java.lang.IllegalStateException
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:429) ~[browsermob-dist-2.1.4.jar:?]
+	at com.google.common.net.MediaType$Tokenizer.consumeTokenIfPresent(MediaType.java:813) ~[browsermob-dist-2.1.4.jar:?]
+	at com.google.common.net.MediaType.parse(MediaType.java:776) ~[browsermob-dist-2.1.4.jar:?]
+	... 52 more
+
+[WARN  2024-04-04T14:46:42,883 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:42,883 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:43,003 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:43,003 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:43,110 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) No content type specified in response from /csp_report. Content will be treated as application/octet-stream 
+[WARN  2024-04-04T14:46:43,112 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:43,112 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,255 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,255 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,265 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,266 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,337 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,337 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,370 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,370 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,392 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,392 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,394 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,394 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,449 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,449 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,565 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,566 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,570 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,571 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,631 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,631 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,643 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,643 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,647 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,647 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,790 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,790 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,803 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,803 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,818 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,818 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,824 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,824 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,852 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,853 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,856 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,856 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,873 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:45,873 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:45,976 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) No content type specified in response from /x/internal/gaia-gateway/ExClimbWuzhi. Content will be treated as application/octet-stream 
+[WARN  2024-04-04T14:46:46,036 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,036 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,036 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,036 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-5) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,036 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,036 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-5) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,094 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,094 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,097 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,098 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,151 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,151 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,154 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,154 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-0) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,206 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,207 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-7) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,209 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,209 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,290 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,290 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,335 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Failed to decompress response with encoding type gzip when decoding request from /bfs/seed/jinkela/short/cols/iframe.html net.lightbody.bmp.exception.DecompressionException: Unable to decompress response
+	at net.lightbody.bmp.util.BrowserMobHttpUtil.decompressContents(BrowserMobHttpUtil.java:101) ~[browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.ServerResponseCaptureFilter.decompressContents(ServerResponseCaptureFilter.java:131) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.ServerResponseCaptureFilter.captureFullResponseContents(ServerResponseCaptureFilter.java:118) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.ServerResponseCaptureFilter.serverToProxyResponse(ServerResponseCaptureFilter.java:99) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.HarCaptureFilter.serverToProxyResponse(HarCaptureFilter.java:250) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.BrowserMobHttpFilterChain.serverToProxyResponse(BrowserMobHttpFilterChain.java:123) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.respond(ClientToProxyConnection.java:418) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.respondWith(ProxyToServerConnection.java:519) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.readHTTPChunk(ProxyToServerConnection.java:251) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.readHTTP(ProxyConnection.java:146) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.read(ProxyConnection.java:120) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.read(ProxyToServerConnection.java:214) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.channelRead0(ProxyConnection.java:587) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection$ResponseReadMonitor.channelRead(ProxyConnection.java:738) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection$BytesReadMonitor.channelRead(ProxyConnection.java:692) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1069) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:902) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:411) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:248) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:129) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+Caused by: java.io.EOFException
+	at java.util.zip.GZIPInputStream.readUByte(Unknown Source) ~[?:1.8.0_401]
+	at java.util.zip.GZIPInputStream.readUShort(Unknown Source) ~[?:1.8.0_401]
+	at java.util.zip.GZIPInputStream.readHeader(Unknown Source) ~[?:1.8.0_401]
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source) ~[?:1.8.0_401]
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source) ~[?:1.8.0_401]
+	at net.lightbody.bmp.util.BrowserMobHttpUtil.decompressContents(BrowserMobHttpUtil.java:89) ~[browsermob-dist-2.1.4.jar:?]
+	... 53 more
+
+[WARN  2024-04-04T14:46:46,336 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-3) Unable to decompress content with encoding: gzip. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,373 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,373 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,398 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,399 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,575 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,575 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,602 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,603 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,675 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-5) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,676 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-5) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,691 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,691 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,694 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,694 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,709 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,709 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,792 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,793 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-1) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,891 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,891 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:46,894 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:46,895 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:47,031 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-5) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,031 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-5) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:47,125 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,125 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:47,158 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,158 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,158 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:47,158 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:47,232 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,232 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-2) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[INFO  2024-04-04T14:46:47,260 net.lightbody.bmp.util.BrowserMobHttpUtil] (LittleProxy-1-ProxyToServerWorker-1) Unable to parse Content-Type header: application/json;. Content-Type header will be ignored. java.lang.IllegalArgumentException: Could not parse 'application/json;'
+	at com.google.common.net.MediaType.parse(MediaType.java:800) ~[browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.util.BrowserMobHttpUtil.readCharsetInContentTypeHeader(BrowserMobHttpUtil.java:187) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.HarCaptureFilter.captureResponseContent(HarCaptureFilter.java:464) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.HarCaptureFilter.serverToProxyResponse(HarCaptureFilter.java:267) [browsermob-dist-2.1.4.jar:?]
+	at net.lightbody.bmp.filters.BrowserMobHttpFilterChain.serverToProxyResponse(BrowserMobHttpFilterChain.java:123) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.respond(ClientToProxyConnection.java:418) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.respondWith(ProxyToServerConnection.java:519) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.readHTTPChunk(ProxyToServerConnection.java:251) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.readHTTP(ProxyConnection.java:146) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.read(ProxyConnection.java:120) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.read(ProxyToServerConnection.java:214) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection.channelRead0(ProxyConnection.java:587) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection$ResponseReadMonitor.channelRead(ProxyConnection.java:738) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [browsermob-dist-2.1.4.jar:?]
+	at org.littleshoot.proxy.impl.ProxyConnection$BytesReadMonitor.channelRead(ProxyConnection.java:692) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1069) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:902) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:411) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:248) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:351) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:373) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:359) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:129) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:651) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+Caused by: java.lang.IllegalStateException
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:429) ~[browsermob-dist-2.1.4.jar:?]
+	at com.google.common.net.MediaType$Tokenizer.consumeTokenIfPresent(MediaType.java:813) ~[browsermob-dist-2.1.4.jar:?]
+	at com.google.common.net.MediaType.parse(MediaType.java:776) ~[browsermob-dist-2.1.4.jar:?]
+	... 52 more
+
+[WARN  2024-04-04T14:46:47,326 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,326 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:47,360 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,360 net.lightbody.bmp.filters.ServerResponseCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Cannot decode unsupported content encoding type br 
+[WARN  2024-04-04T14:46:47,360 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-6) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[WARN  2024-04-04T14:46:47,361 net.lightbody.bmp.filters.HarCaptureFilter] (LittleProxy-1-ProxyToServerWorker-4) Unable to decompress content with encoding: br. Contents will be encoded as base64 binary data. 
+[INFO  2024-04-04T14:46:47,499 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-1-ClientToProxyWorker-4) (NEGOTIATING_CONNECT) [id: 0xd71403b7, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:4694]: An IOException occurred on ClientToProxyConnection: 你的主机中的软件中止了一个已建立的连接。 
+[INFO  2024-04-04T14:46:47,500 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-4) (HANDSHAKING) [id: 0xbc15f6ee, L:0.0.0.0/0.0.0.0:4695 ! R:api.bilibili.com/121.194.11.73:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-04-04T14:46:47,509 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-1-ClientToProxyWorker-1) (NEGOTIATING_CONNECT) [id: 0xcf6cfa0f, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:4704]: An IOException occurred on ClientToProxyConnection: 你的主机中的软件中止了一个已建立的连接。 
+[INFO  2024-04-04T14:46:47,509 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-3) (HANDSHAKING) [id: 0x52641f22, L:0.0.0.0/0.0.0.0:4705 ! R:data.bilibili.com/222.192.187.137:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-04-04T14:46:47,517 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-1-ClientToProxyWorker-5) (NEGOTIATING_CONNECT) [id: 0x1baf96a5, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:4696]: An IOException occurred on ClientToProxyConnection: 你的主机中的软件中止了一个已建立的连接。 
+[INFO  2024-04-04T14:46:47,518 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-5) (HANDSHAKING) [id: 0x4062df94, L:0.0.0.0/0.0.0.0:4697 ! R:api.bilibili.com/121.194.11.73:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-04-04T14:46:47,538 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-1-ClientToProxyWorker-6) (NEGOTIATING_CONNECT) [id: 0x2bb2b1c0, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:4698]: An IOException occurred on ClientToProxyConnection: 你的主机中的软件中止了一个已建立的连接。 
+[INFO  2024-04-04T14:46:47,539 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-6) (HANDSHAKING) [id: 0x49dc6c15, L:0.0.0.0/0.0.0.0:4700 ! R:api.bilibili.com/121.194.11.73:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-04-04T14:46:47,540 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-1-ClientToProxyWorker-0) (NEGOTIATING_CONNECT) [id: 0xbc330a3b, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:4702]: An IOException occurred on ClientToProxyConnection: 你的主机中的软件中止了一个已建立的连接。 
+[INFO  2024-04-04T14:46:47,540 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-0) (HANDSHAKING) [id: 0xc08eccae, L:0.0.0.0/0.0.0.0:4703 ! R:api.bilibili.com/121.194.11.73:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-04-04T14:46:47,541 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-1-ClientToProxyWorker-7) (NEGOTIATING_CONNECT) [id: 0x87d714af, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:4699]: An IOException occurred on ClientToProxyConnection: 你的主机中的软件中止了一个已建立的连接。 
+[INFO  2024-04-04T14:46:47,542 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-7) (HANDSHAKING) [id: 0x86e9f1f1, L:0.0.0.0/0.0.0.0:4701 ! R:api.bilibili.com/121.194.11.73:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-04-04T14:47:01,137 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-2) (CONNECTING) [id: 0xcc5263d5]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: www.google.com/199.96.59.19:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:01,137 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-0) (CONNECTING) [id: 0x8bf10be8]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: accounts.google.com/93.46.8.90:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:01,433 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-4) (CONNECTING) [id: 0x17f14eab]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: optimizationguide-pa.googleapis.com/172.217.163.42:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:01,495 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-6) (CONNECTING) [id: 0x821dcfd5]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: www.google.com/199.96.59.19:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:02,027 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-7) (CONNECTING) [id: 0xa944e06b]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: www.google.com/199.96.59.19:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:02,057 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-0) (CONNECTING) [id: 0xe015ebaf]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: www.google.com/199.96.59.19:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:03,588 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-3) (CONNECTING) [id: 0x2d255ca3]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: content-autofill.googleapis.com/172.217.163.42:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:05,349 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-0) (CONNECTING) [id: 0xbe44039e]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: optimizationguide-pa.googleapis.com/172.217.163.42:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:06,038 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-2) (CONNECTING) [id: 0x926bb4f9]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: optimizationguide-pa.googleapis.com/172.217.163.42:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:47:06,286 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-1-ProxyToServerWorker-6) (CONNECTING) [id: 0x068a1745]: Connection to upstream server failed io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: optimizationguide-pa.googleapis.com/172.217.163.42:443
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[?:1.8.0_401]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:1.8.0_401]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:346) ~[browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:639) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:574) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:488) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:450) [browsermob-dist-2.1.4.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:873) [browsermob-dist-2.1.4.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_401]
+
+[INFO  2024-04-04T14:54:37,730 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (LittleProxy-JVM-shutdown-hook) Shutting down proxy server immediately (non-graceful) 
+[INFO  2024-04-04T14:54:37,730 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (LittleProxy-JVM-shutdown-hook) Shutting down proxy server immediately (non-graceful) 
+[INFO  2024-04-04T14:54:37,730 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (LittleProxy-JVM-shutdown-hook) Closing all channels (non-graceful) 
+[INFO  2024-04-04T14:54:37,730 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (LittleProxy-JVM-shutdown-hook) Closing all channels (non-graceful) 
+终止批处理操作吗(Y/N)? 
+^C系统无法打开指定的设备或文件。
+终止批处理操作吗(Y/N)? 

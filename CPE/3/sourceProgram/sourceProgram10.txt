@@ -1,0 +1,19 @@
+//program10: test prime numbers.
+{	
+	int number,i,j;
+	bool cond,flag;
+	read number;	
+
+	i = 2;
+	flag = true;
+	cond := i<number && flag;
+
+	while cond do 
+	{
+		j=number-(number/i)*i;
+		flag:= j!=0;
+		i=i+1;
+		cond := i<number && flag;
+	}	
+	if flag then write number;	
+}

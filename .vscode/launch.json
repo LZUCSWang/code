@@ -1,15 +1,23 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "request": "launch",
-            "name": "Debug",
-            "program": "${workspaceFolder}/<executable file>",
-            "args": [],
-            "cwd": "${workspaceFolder}"
-        }
-    ]
+  "configurations": [
+    {
+      "MIMode": "gdb",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "env": {
+        "PATH": "C:\\Strawberry\\c\\bin;${env:PATH}"
+      },
+      "environment": [],
+      "externalConsole": true,
+      "internalConsosleOptions": "neverOpen",
+      "miDebuggerPath": "C:\\Strawberry\\c\\bin\\gdb.exe",
+      "name": "single file debug",
+      "preLaunchTask": "single file build",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "request": "launch",
+      "stopAtEntry": false,
+      "type": "cppdbg"
+    }
+  ],
+  "version": "0.2.0"
 }

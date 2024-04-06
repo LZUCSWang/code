@@ -1,0 +1,20 @@
+Follow¼¯ºÏ£º
+Start: #
+PROG: #
+DECLS: id if while write bool int read {
+DECL: id if while bool write int read {
+NAMES: , ;
+NAME: , ;
+STMTS: id if while write read { }
+STMT: id if while else write read { }
+EXPR: - == + > ) || >= && != ; < <=
+ADD: id - number (
+TERM: - == + > ) * / || >= && != ; < <=
+MUL: id - number (
+NEGA: - == + > ) * / || >= && != ; < <=
+FACTOR: - == + > ) * / || >= && != ; < <=
+BOOL: ; ||
+JOIN: && ; ||
+NOT: && ; ||
+REL: && ; ||
+ROP: id - number (

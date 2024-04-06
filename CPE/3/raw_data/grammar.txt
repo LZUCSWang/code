@@ -1,0 +1,24 @@
+PROG     ->     {    DECLS    STMTS    }
+DECLS -> DECLS DECL | $
+DECL-> int  NAMES  ;  |  bool  NAMES  ; 
+NAMES  ->    NAMES ,  NAME  |  NAME
+NAME    ->    id
+STMTS ->    STMTS  STMT  |   STMT          
+STMT   ->    id  =  EXPR ;    |   id := BOOL ;
+STMT   -> if  id   then  STMT
+STMT   -> if  id   then  STMT  else STMT
+STMT   -> while   id  do  STMT
+STMT   -> {  STMTS   STMT  }
+STMT   -> read  id  ;
+STMT   -> write  id  ;
+EXPR -> EXPR  ADD  TERM  |  TERM
+ADD  -> + | -
+TERM -> TERM  MUL NEGA  |  NEGA
+MUL  ->    * | /
+NEGA  ->    FACTOR  |  - FACTOR  
+FACTOR ->   (  EXPR ) |  id  |  number 
+BOOL   ->    BOOL  ||  JOIN    |    JOIN
+JOIN    ->    JOIN   &&   NOT  |   NOT
+NOT     ->    REL   |  ! REL
+REL      ->    EXPR   ROP  EXPR 
+ROP     ->     >  |  >=  |  <  |  <=  |  ==  |   !=

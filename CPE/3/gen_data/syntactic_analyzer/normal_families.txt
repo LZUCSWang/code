@@ -1,0 +1,451 @@
+项目集规范族：
+规范族 0 : 
+PROG->· { DECLS STMTS } 
+Start->· PROG 
+
+规范族 1 : 
+PROG->{ · DECLS STMTS } 
+DECLS->· DECLS DECL 
+DECLS->·
+
+规范族 2 : 
+Start->PROG ·
+
+规范族 3 : 
+STMTS->· STMTS STMT 
+PROG->{ DECLS · STMTS } 
+DECL->· int NAMES ; 
+DECLS->DECLS · DECL 
+STMT->· { STMTS STMT } 
+STMT->· id = EXPR ; 
+STMT->· read id ; 
+STMT->· id := BOOL ; 
+STMT->· write id ; 
+STMT->· if id then STMT 
+STMT->· if id then STMT else STMT 
+STMT->· while id do STMT 
+STMTS->· STMT 
+DECL->· bool NAMES ; 
+
+规范族 4 : 
+STMT->· { STMTS STMT } 
+STMT->· id = EXPR ; 
+STMT->· read id ; 
+STMT->· id := BOOL ; 
+STMT->· write id ; 
+STMT->· if id then STMT 
+STMT->· if id then STMT else STMT 
+STMT->· while id do STMT 
+STMTS->STMTS · STMT 
+PROG->{ DECLS STMTS · } 
+
+规范族 5 : 
+NAMES->· NAME 
+DECL->int · NAMES ; 
+NAME->· id 
+NAMES->· NAMES , NAME 
+
+规范族 6 : 
+DECLS->DECLS DECL ·
+
+规范族 7 : 
+STMTS->· STMTS STMT 
+STMT->· { STMTS STMT } 
+STMT->· id = EXPR ; 
+STMT->· read id ; 
+STMT->· id := BOOL ; 
+STMT->· write id ; 
+STMT->· if id then STMT 
+STMT->· if id then STMT else STMT 
+STMT->· while id do STMT 
+STMTS->· STMT 
+STMT->{ · STMTS STMT } 
+
+规范族 8 : 
+STMT->id · = EXPR ; 
+STMT->id · := BOOL ; 
+
+规范族 9 : 
+STMT->read · id ; 
+
+规范族 10 : 
+STMT->write · id ; 
+
+规范族 11 : 
+STMT->if · id then STMT else STMT 
+STMT->if · id then STMT 
+
+规范族 12 : 
+STMT->while · id do STMT 
+
+规范族 13 : 
+STMTS->STMT ·
+
+规范族 14 : 
+NAMES->· NAME 
+DECL->bool · NAMES ; 
+NAME->· id 
+NAMES->· NAMES , NAME 
+
+规范族 15 : 
+NAMES->NAME ·
+
+规范族 16 : 
+NAMES->NAMES · , NAME 
+DECL->bool NAMES · ; 
+
+规范族 17 : 
+NAME->id ·
+
+规范族 18 : 
+NAMES->NAMES , · NAME 
+NAME->· id 
+
+规范族 19 : 
+DECL->bool NAMES ; ·
+
+规范族 20 : 
+NAMES->NAMES , NAME ·
+
+规范族 21 : 
+STMT->while id · do STMT 
+
+规范族 22 : 
+STMT->· { STMTS STMT } 
+STMT->· id = EXPR ; 
+STMT->· read id ; 
+STMT->· id := BOOL ; 
+STMT->· write id ; 
+STMT->· if id then STMT 
+STMT->· if id then STMT else STMT 
+STMT->· while id do STMT 
+STMT->while id do · STMT 
+
+规范族 23 : 
+STMT->while id do STMT ·
+
+规范族 24 : 
+STMT->if id · then STMT 
+STMT->if id · then STMT else STMT 
+
+规范族 25 : 
+STMT->· { STMTS STMT } 
+STMT->· id = EXPR ; 
+STMT->· read id ; 
+STMT->· id := BOOL ; 
+STMT->· write id ; 
+STMT->· if id then STMT 
+STMT->· if id then STMT else STMT 
+STMT->if id then · STMT 
+STMT->· while id do STMT 
+STMT->if id then · STMT else · STMT 
+
+规范族 26 : 
+STMT->if id then STMT ·
+STMT->if id then STMT · else STMT 
+
+规范族 27 : 
+STMT->· { STMTS STMT } 
+STMT->· id = EXPR ; 
+STMT->· read id ; 
+STMT->· id := BOOL ; 
+STMT->· write id ; 
+STMT->· if id then STMT 
+STMT->· if id then STMT else STMT 
+STMT->· while id do STMT 
+STMT->if id then STMT else STMT 
+
+规范族 28 : 
+STMT->if id then STMT else STMT 
+
+规范族 29 : 
+STMT->write id · ; 
+
+规范族 30 : 
+STMT->write id ; ·
+
+规范族 31 : 
+STMT->read id · ; 
+
+规范族 32 : 
+STMT->read id ; ·
+
+规范族 33 : 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+FACTOR->· ( EXPR ) 
+TERM->· NEGA 
+FACTOR->· id 
+EXPR->· EXPR ADD TERM 
+EXPR->· TERM 
+STMT->id = · EXPR ; 
+FACTOR->· number 
+NEGA->· FACTOR 
+
+规范族 34 : 
+NOT->· ! REL 
+REL->· EXPR ROP · EXPR 
+BOOL->· JOIN 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+JOIN->· JOIN && NOT 
+FACTOR->· ( EXPR ) 
+JOIN->· NOT 
+TERM->· NEGA 
+FACTOR->· id 
+NOT->· REL 
+EXPR->· TERM 
+FACTOR->· number 
+EXPR->· EXPR ADD TERM 
+BOOL->· BOOL || JOIN 
+STMT->id := · BOOL ; 
+NEGA->· FACTOR 
+
+规范族 35 : 
+REL->· EXPR ROP · EXPR 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+FACTOR->· ( EXPR ) 
+TERM->· NEGA 
+FACTOR->· id 
+EXPR->· EXPR ADD TERM 
+EXPR->· TERM 
+FACTOR->· number 
+NEGA->· FACTOR 
+NOT->! · REL 
+
+规范族 36 : 
+REL->EXPR · ROP EXPR 
+ROP->· <= 
+ADD->· + 
+EXPR->EXPR · ADD TERM 
+ROP->· != 
+ROP->· >= 
+ROP->· < 
+ROP->· == 
+ADD->· - 
+ROP->· > 
+
+规范族 37 : 
+BOOL->JOIN ·
+JOIN->JOIN · && NOT 
+
+规范族 38 : 
+FACTOR->· number 
+NEGA->- · FACTOR 
+FACTOR->· ( EXPR ) 
+FACTOR->· id 
+
+规范族 39 : 
+EXPR->TERM ·
+MUL->· * 
+MUL->· / 
+TERM->TERM · MUL NEGA 
+
+规范族 40 : 
+FACTOR->( · EXPR ) 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+FACTOR->· ( EXPR ) 
+TERM->· NEGA 
+FACTOR->· id 
+EXPR->· EXPR ADD TERM 
+EXPR->· TERM 
+FACTOR->· number 
+NEGA->· FACTOR 
+
+规范族 41 : 
+JOIN->NOT ·
+
+规范族 42 : 
+TERM->NEGA ·
+
+规范族 43 : 
+FACTOR->id ·
+
+规范族 44 : 
+NOT->REL ·
+
+规范族 45 : 
+FACTOR->number ·
+
+规范族 46 : 
+STMT->id := BOOL · ; 
+BOOL->BOOL · || JOIN 
+
+规范族 47 : 
+NEGA->FACTOR ·
+
+规范族 48 : 
+STMT->id := BOOL ; ·
+
+规范族 49 : 
+NOT->· ! REL 
+REL->· EXPR ROP · EXPR 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+JOIN->· JOIN && NOT 
+FACTOR->· ( EXPR ) 
+JOIN->· NOT 
+TERM->· NEGA 
+FACTOR->· id 
+NOT->· REL 
+EXPR->· TERM 
+FACTOR->· number 
+EXPR->· EXPR ADD TERM 
+NEGA->· FACTOR 
+BOOL->BOOL || · JOIN 
+
+规范族 50 : 
+BOOL->BOOL || JOIN ·
+JOIN->JOIN · && NOT 
+
+规范族 51 : 
+NOT->· ! REL 
+REL->· EXPR ROP · EXPR 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+FACTOR->· ( EXPR ) 
+TERM->· NEGA 
+FACTOR->· id 
+EXPR->· EXPR ADD TERM 
+NOT->· REL 
+EXPR->· TERM 
+FACTOR->· number 
+NEGA->· FACTOR 
+JOIN->JOIN && · NOT 
+
+规范族 52 : 
+JOIN->JOIN && NOT ·
+
+规范族 53 : 
+EXPR->EXPR · ADD TERM 
+ADD->· + 
+ADD->· - 
+FACTOR->( EXPR · ) 
+
+规范族 54 : 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+FACTOR->· ( EXPR ) 
+TERM->· NEGA 
+FACTOR->· id 
+FACTOR->· number 
+NEGA->· FACTOR 
+EXPR->EXPR ADD · TERM 
+
+规范族 55 : 
+ADD->+ ·
+
+规范族 56 : 
+ADD->- ·
+
+规范族 57 : 
+FACTOR->( EXPR ) ·
+
+规范族 58 : 
+MUL->· * 
+MUL->· / 
+TERM->TERM · MUL NEGA 
+EXPR->EXPR ADD TERM ·
+
+规范族 59 : 
+MUL->* ·
+
+规范族 60 : 
+MUL->/ ·
+
+规范族 61 : 
+NEGA->· - FACTOR 
+FACTOR->· ( EXPR ) 
+FACTOR->· id 
+FACTOR->· number 
+TERM->TERM MUL · NEGA 
+NEGA->· FACTOR 
+
+规范族 62 : 
+TERM->TERM MUL NEGA ·
+
+规范族 63 : 
+NEGA->- FACTOR ·
+
+规范族 64 : 
+NEGA->· - FACTOR 
+TERM->· TERM MUL NEGA 
+FACTOR->· ( EXPR ) 
+TERM->· NEGA 
+FACTOR->· id 
+EXPR->· EXPR ADD TERM 
+EXPR->· TERM 
+REL->EXPR ROP EXPR 
+FACTOR->· number 
+NEGA->· FACTOR 
+
+规范族 65 : 
+ROP-><= ·
+
+规范族 66 : 
+ROP->!= ·
+
+规范族 67 : 
+ROP->>= ·
+
+规范族 68 : 
+ROP->< ·
+
+规范族 69 : 
+ROP->== ·
+
+规范族 70 : 
+ROP->> ·
+
+规范族 71 : 
+REL->EXPR ROP EXPR 
+ADD->· + 
+ADD->· - 
+EXPR->EXPR · ADD TERM 
+
+规范族 72 : 
+NOT->! REL ·
+
+规范族 73 : 
+STMT->id = EXPR · ; 
+ADD->· + 
+ADD->· - 
+EXPR->EXPR · ADD TERM 
+
+规范族 74 : 
+STMT->id = EXPR ; ·
+
+规范族 75 : 
+STMT->· { STMTS STMT } 
+STMT->· id = EXPR ; 
+STMT->· read id ; 
+STMT->· id := BOOL ; 
+STMT->· write id ; 
+STMT->· if id then STMT 
+STMT->· if id then STMT else STMT 
+STMT->{ STMTS · STMT } 
+STMT->· while id do STMT 
+STMTS->STMTS · STMT 
+
+规范族 76 : 
+STMT->{ STMTS STMT · } 
+STMTS->STMTS STMT ·
+
+规范族 77 : 
+STMT->{ STMTS STMT } ·
+
+规范族 78 : 
+NAMES->NAMES · , NAME 
+DECL->int NAMES · ; 
+
+规范族 79 : 
+DECL->int NAMES ; ·
+
+规范族 80 : 
+STMTS->STMTS STMT ·
+
+规范族 81 : 
+PROG->{ DECLS STMTS } ·
+
