@@ -24,148 +24,54 @@
 22,0 1 3 14 16 18 17 ,# { DECLS bool NAMES ，id ,移进
 23,0 1 3 14 16 18 20 ,# { DECLS bool NAMES ，NAME ,规约： NAME->id 
 24,0 1 3 14 16 ,# { DECLS bool NAMES ,规约： NAMES->NAMES ，NAME 
-25,0 1 3 14 16 18 ,# { DECLS bool NAMES ，,移进
-26,0 1 3 14 16 18 17 ,# { DECLS bool NAMES ，id ,移进
-27,0 1 3 14 16 18 20 ,# { DECLS bool NAMES ，NAME ,规约： NAME->id 
-28,0 1 3 14 16 ,# { DECLS bool NAMES ,规约： NAMES->NAMES ，NAME 
-29,0 1 3 14 16 19 ,# { DECLS bool NAMES ; ,移进
-30,0 1 3 6 ,# { DECLS DECL ,规约： DECL->bool NAMES ; 
-31,0 1 3 ,# { DECLS ,规约： DECLS->DECLS DECL 
-32,0 1 3 9 ,# { DECLS read ,移进
-33,0 1 3 9 31 ,# { DECLS read id ,移进
-34,0 1 3 9 31 32 ,# { DECLS read id ; ,移进
-35,0 1 3 13 ,# { DECLS STMT ,规约： STMT->read id ; 
-36,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMT 
-37,0 1 3 4 9 ,# { DECLS STMTS read ,移进
-38,0 1 3 4 9 31 ,# { DECLS STMTS read id ,移进
-39,0 1 3 4 9 31 32 ,# { DECLS STMTS read id ; ,移进
-40,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->read id ; 
-41,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-42,0 1 3 4 9 ,# { DECLS STMTS read ,移进
-43,0 1 3 4 9 31 ,# { DECLS STMTS read id ,移进
-44,0 1 3 4 9 31 32 ,# { DECLS STMTS read id ; ,移进
-45,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->read id ; 
-46,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-47,0 1 3 4 8 ,# { DECLS STMTS id ,移进
-48,0 1 3 4 8 34 ,# { DECLS STMTS id := ,移进
-49,0 1 3 4 8 34 43 ,# { DECLS STMTS id := id ,移进
-50,0 1 3 4 8 34 47 ,# { DECLS STMTS id := FACTOR ,规约： FACTOR->id 
-51,0 1 3 4 8 34 42 ,# { DECLS STMTS id := NEGA ,规约： NEGA->FACTOR 
-52,0 1 3 4 8 34 39 ,# { DECLS STMTS id := TERM ,规约： TERM->NEGA 
-53,0 1 3 4 8 34 36 ,# { DECLS STMTS id := EXPR ,规约： EXPR->TERM 
-54,0 1 3 4 8 34 36 67 ,# { DECLS STMTS id := EXPR >= ,移进
-55,0 1 3 4 8 34 36 64 ,# { DECLS STMTS id := EXPR ROP ,规约： ROP->>= 
-56,0 1 3 4 8 34 36 64 43 ,# { DECLS STMTS id := EXPR ROP id ,移进
-57,0 1 3 4 8 34 36 64 47 ,# { DECLS STMTS id := EXPR ROP FACTOR ,规约： FACTOR->id 
-58,0 1 3 4 8 34 36 64 42 ,# { DECLS STMTS id := EXPR ROP NEGA ,规约： NEGA->FACTOR 
-59,0 1 3 4 8 34 36 64 39 ,# { DECLS STMTS id := EXPR ROP TERM ,规约： TERM->NEGA 
-60,0 1 3 4 8 34 36 64 71 ,# { DECLS STMTS id := EXPR ROP EXPR ,规约： EXPR->TERM 
-61,0 1 3 4 8 34 44 ,# { DECLS STMTS id := REL ,规约： REL->EXPR ROP EXPR 
-62,0 1 3 4 8 34 41 ,# { DECLS STMTS id := NOT ,规约： NOT->REL 
-63,0 1 3 4 8 34 37 ,# { DECLS STMTS id := JOIN ,规约： JOIN->NOT 
-64,0 1 3 4 8 34 46 ,# { DECLS STMTS id := BOOL ,规约： BOOL->JOIN 
-65,0 1 3 4 8 34 46 48 ,# { DECLS STMTS id := BOOL ; ,移进
-66,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->id := BOOL ; 
-67,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-68,0 1 3 4 8 ,# { DECLS STMTS id ,移进
-69,0 1 3 4 8 34 ,# { DECLS STMTS id := ,移进
-70,0 1 3 4 8 34 43 ,# { DECLS STMTS id := id ,移进
-71,0 1 3 4 8 34 47 ,# { DECLS STMTS id := FACTOR ,规约： FACTOR->id 
-72,0 1 3 4 8 34 42 ,# { DECLS STMTS id := NEGA ,规约： NEGA->FACTOR 
-73,0 1 3 4 8 34 39 ,# { DECLS STMTS id := TERM ,规约： TERM->NEGA 
-74,0 1 3 4 8 34 36 ,# { DECLS STMTS id := EXPR ,规约： EXPR->TERM 
-75,0 1 3 4 8 34 36 67 ,# { DECLS STMTS id := EXPR >= ,移进
-76,0 1 3 4 8 34 36 64 ,# { DECLS STMTS id := EXPR ROP ,规约： ROP->>= 
-77,0 1 3 4 8 34 36 64 43 ,# { DECLS STMTS id := EXPR ROP id ,移进
-78,0 1 3 4 8 34 36 64 47 ,# { DECLS STMTS id := EXPR ROP FACTOR ,规约： FACTOR->id 
-79,0 1 3 4 8 34 36 64 42 ,# { DECLS STMTS id := EXPR ROP NEGA ,规约： NEGA->FACTOR 
-80,0 1 3 4 8 34 36 64 39 ,# { DECLS STMTS id := EXPR ROP TERM ,规约： TERM->NEGA 
-81,0 1 3 4 8 34 36 64 71 ,# { DECLS STMTS id := EXPR ROP EXPR ,规约： EXPR->TERM 
-82,0 1 3 4 8 34 44 ,# { DECLS STMTS id := REL ,规约： REL->EXPR ROP EXPR 
-83,0 1 3 4 8 34 41 ,# { DECLS STMTS id := NOT ,规约： NOT->REL 
-84,0 1 3 4 8 34 37 ,# { DECLS STMTS id := JOIN ,规约： JOIN->NOT 
-85,0 1 3 4 8 34 46 ,# { DECLS STMTS id := BOOL ,规约： BOOL->JOIN 
-86,0 1 3 4 8 34 46 48 ,# { DECLS STMTS id := BOOL ; ,移进
-87,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->id := BOOL ; 
-88,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-89,0 1 3 4 8 ,# { DECLS STMTS id ,移进
-90,0 1 3 4 8 34 ,# { DECLS STMTS id := ,移进
-91,0 1 3 4 8 34 43 ,# { DECLS STMTS id := id ,移进
-92,0 1 3 4 8 34 47 ,# { DECLS STMTS id := FACTOR ,规约： FACTOR->id 
-93,0 1 3 4 8 34 42 ,# { DECLS STMTS id := NEGA ,规约： NEGA->FACTOR 
-94,0 1 3 4 8 34 39 ,# { DECLS STMTS id := TERM ,规约： TERM->NEGA 
-95,0 1 3 4 8 34 36 ,# { DECLS STMTS id := EXPR ,规约： EXPR->TERM 
-96,0 1 3 4 8 34 36 67 ,# { DECLS STMTS id := EXPR >= ,移进
-97,0 1 3 4 8 34 36 64 ,# { DECLS STMTS id := EXPR ROP ,规约： ROP->>= 
-98,0 1 3 4 8 34 36 64 43 ,# { DECLS STMTS id := EXPR ROP id ,移进
-99,0 1 3 4 8 34 36 64 47 ,# { DECLS STMTS id := EXPR ROP FACTOR ,规约： FACTOR->id 
-100,0 1 3 4 8 34 36 64 42 ,# { DECLS STMTS id := EXPR ROP NEGA ,规约： NEGA->FACTOR 
-101,0 1 3 4 8 34 36 64 39 ,# { DECLS STMTS id := EXPR ROP TERM ,规约： TERM->NEGA 
-102,0 1 3 4 8 34 36 64 71 ,# { DECLS STMTS id := EXPR ROP EXPR ,规约： EXPR->TERM 
-103,0 1 3 4 8 34 44 ,# { DECLS STMTS id := REL ,规约： REL->EXPR ROP EXPR 
-104,0 1 3 4 8 34 41 ,# { DECLS STMTS id := NOT ,规约： NOT->REL 
-105,0 1 3 4 8 34 37 ,# { DECLS STMTS id := JOIN ,规约： JOIN->NOT 
-106,0 1 3 4 8 34 46 ,# { DECLS STMTS id := BOOL ,规约： BOOL->JOIN 
-107,0 1 3 4 8 34 46 48 ,# { DECLS STMTS id := BOOL ; ,移进
-108,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->id := BOOL ; 
-109,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-110,0 1 3 4 11 ,# { DECLS STMTS if ,移进
-111,0 1 3 4 11 24 ,# { DECLS STMTS if id ,移进
-112,0 1 3 4 11 24 25 ,# { DECLS STMTS if id then ,移进
-113,0 1 3 4 11 24 25 11 ,# { DECLS STMTS if id then if ,移进
-114,0 1 3 4 11 24 25 11 24 ,# { DECLS STMTS if id then if id ,移进
-115,0 1 3 4 11 24 25 11 24 25 ,# { DECLS STMTS if id then if id then ,移进
-116,0 1 3 4 11 24 25 11 24 25 10 ,# { DECLS STMTS if id then if id then write ,移进
-117,0 1 3 4 11 24 25 11 24 25 10 29 ,# { DECLS STMTS if id then if id then write id ,移进
-118,0 1 3 4 11 24 25 11 24 25 10 29 30 ,# { DECLS STMTS if id then if id then write id ; ,移进
-119,0 1 3 4 11 24 25 11 24 25 26 ,# { DECLS STMTS if id then if id then STMT ,规约： STMT->write id ; 
-120,0 1 3 4 11 24 25 11 24 25 26 27 ,# { DECLS STMTS if id then if id then STMT else ,移进
-121,0 1 3 4 11 24 25 11 24 25 26 27 10 ,# { DECLS STMTS if id then if id then STMT else write ,移进
-122,0 1 3 4 11 24 25 11 24 25 26 27 10 29 ,# { DECLS STMTS if id then if id then STMT else write id ,移进
-123,0 1 3 4 11 24 25 11 24 25 26 27 10 29 30 ,# { DECLS STMTS if id then if id then STMT else write id ; ,移进
-124,0 1 3 4 11 24 25 11 24 25 26 27 28 ,# { DECLS STMTS if id then if id then STMT else STMT ,规约： STMT->write id ; 
-125,0 1 3 4 11 24 25 26 ,# { DECLS STMTS if id then STMT ,规约： STMT->if id then STMT else STMT 
-126,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->if id then STMT 
-127,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-128,0 1 3 4 8 ,# { DECLS STMTS id ,移进
-129,0 1 3 4 8 34 ,# { DECLS STMTS id := ,移进
-130,0 1 3 4 8 34 43 ,# { DECLS STMTS id := id ,移进
-131,0 1 3 4 8 34 47 ,# { DECLS STMTS id := FACTOR ,规约： FACTOR->id 
-132,0 1 3 4 8 34 42 ,# { DECLS STMTS id := NEGA ,规约： NEGA->FACTOR 
-133,0 1 3 4 8 34 39 ,# { DECLS STMTS id := TERM ,规约： TERM->NEGA 
-134,0 1 3 4 8 34 36 ,# { DECLS STMTS id := EXPR ,规约： EXPR->TERM 
-135,0 1 3 4 8 34 36 68 ,# { DECLS STMTS id := EXPR < ,移进
-136,0 1 3 4 8 34 36 64 ,# { DECLS STMTS id := EXPR ROP ,规约： ROP->< 
-137,0 1 3 4 8 34 36 64 43 ,# { DECLS STMTS id := EXPR ROP id ,移进
-138,0 1 3 4 8 34 36 64 47 ,# { DECLS STMTS id := EXPR ROP FACTOR ,规约： FACTOR->id 
-139,0 1 3 4 8 34 36 64 42 ,# { DECLS STMTS id := EXPR ROP NEGA ,规约： NEGA->FACTOR 
-140,0 1 3 4 8 34 36 64 39 ,# { DECLS STMTS id := EXPR ROP TERM ,规约： TERM->NEGA 
-141,0 1 3 4 8 34 36 64 71 ,# { DECLS STMTS id := EXPR ROP EXPR ,规约： EXPR->TERM 
-142,0 1 3 4 8 34 44 ,# { DECLS STMTS id := REL ,规约： REL->EXPR ROP EXPR 
-143,0 1 3 4 8 34 41 ,# { DECLS STMTS id := NOT ,规约： NOT->REL 
-144,0 1 3 4 8 34 37 ,# { DECLS STMTS id := JOIN ,规约： JOIN->NOT 
-145,0 1 3 4 8 34 46 ,# { DECLS STMTS id := BOOL ,规约： BOOL->JOIN 
-146,0 1 3 4 8 34 46 48 ,# { DECLS STMTS id := BOOL ; ,移进
-147,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->id := BOOL ; 
-148,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-149,0 1 3 4 11 ,# { DECLS STMTS if ,移进
-150,0 1 3 4 11 24 ,# { DECLS STMTS if id ,移进
-151,0 1 3 4 11 24 25 ,# { DECLS STMTS if id then ,移进
-152,0 1 3 4 11 24 25 11 ,# { DECLS STMTS if id then if ,移进
-153,0 1 3 4 11 24 25 11 24 ,# { DECLS STMTS if id then if id ,移进
-154,0 1 3 4 11 24 25 11 24 25 ,# { DECLS STMTS if id then if id then ,移进
-155,0 1 3 4 11 24 25 11 24 25 10 ,# { DECLS STMTS if id then if id then write ,移进
-156,0 1 3 4 11 24 25 11 24 25 10 29 ,# { DECLS STMTS if id then if id then write id ,移进
-157,0 1 3 4 11 24 25 11 24 25 10 29 30 ,# { DECLS STMTS if id then if id then write id ; ,移进
-158,0 1 3 4 11 24 25 11 24 25 26 ,# { DECLS STMTS if id then if id then STMT ,规约： STMT->write id ; 
-159,0 1 3 4 11 24 25 11 24 25 26 27 ,# { DECLS STMTS if id then if id then STMT else ,移进
-160,0 1 3 4 11 24 25 11 24 25 26 27 10 ,# { DECLS STMTS if id then if id then STMT else write ,移进
-161,0 1 3 4 11 24 25 11 24 25 26 27 10 29 ,# { DECLS STMTS if id then if id then STMT else write id ,移进
-162,0 1 3 4 11 24 25 11 24 25 26 27 10 29 30 ,# { DECLS STMTS if id then if id then STMT else write id ; ,移进
-163,0 1 3 4 11 24 25 11 24 25 26 27 28 ,# { DECLS STMTS if id then if id then STMT else STMT ,规约： STMT->write id ; 
-164,0 1 3 4 11 24 25 26 ,# { DECLS STMTS if id then STMT ,规约： STMT->if id then STMT else STMT 
-165,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->if id then STMT 
-166,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
-167,0 1 3 4 81 ,# { DECLS STMTS } ,移进
-168,0 2 ,# PROG ,规约： PROG->{ DECLS STMTS } 
-169,0 2 ,# PROG ,接受
+25,0 1 3 14 16 19 ,# { DECLS bool NAMES ; ,移进
+26,0 1 3 6 ,# { DECLS DECL ,规约： DECL->bool NAMES ; 
+27,0 1 3 ,# { DECLS ,规约： DECLS->DECLS DECL 
+28,0 1 3 9 ,# { DECLS read ,移进
+29,0 1 3 9 31 ,# { DECLS read id ,移进
+30,0 1 3 9 31 32 ,# { DECLS read id ; ,移进
+31,0 1 3 13 ,# { DECLS STMT ,规约： STMT->read id ; 
+32,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMT 
+33,0 1 3 4 8 ,# { DECLS STMTS id ,移进
+34,0 1 3 4 8 33 ,# { DECLS STMTS id = ,移进
+35,0 1 3 4 8 33 45 ,# { DECLS STMTS id = number ,移进
+36,0 1 3 4 8 33 47 ,# { DECLS STMTS id = FACTOR ,规约： FACTOR->number 
+37,0 1 3 4 8 33 42 ,# { DECLS STMTS id = NEGA ,规约： NEGA->FACTOR 
+38,0 1 3 4 8 33 39 ,# { DECLS STMTS id = TERM ,规约： TERM->NEGA 
+39,0 1 3 4 8 33 73 ,# { DECLS STMTS id = EXPR ,规约： EXPR->TERM 
+40,0 1 3 4 8 33 73 74 ,# { DECLS STMTS id = EXPR ; ,移进
+41,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->id = EXPR ; 
+42,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
+43,0 1 3 4 8 ,# { DECLS STMTS id ,移进
+44,0 1 3 4 8 33 ,# { DECLS STMTS id = ,移进
+45,0 1 3 4 8 33 45 ,# { DECLS STMTS id = number ,移进
+46,0 1 3 4 8 33 47 ,# { DECLS STMTS id = FACTOR ,规约： FACTOR->number 
+47,0 1 3 4 8 33 42 ,# { DECLS STMTS id = NEGA ,规约： NEGA->FACTOR 
+48,0 1 3 4 8 33 39 ,# { DECLS STMTS id = TERM ,规约： TERM->NEGA 
+49,0 1 3 4 8 33 73 ,# { DECLS STMTS id = EXPR ,规约： EXPR->TERM 
+50,0 1 3 4 8 33 73 74 ,# { DECLS STMTS id = EXPR ; ,移进
+51,0 1 3 4 80 ,# { DECLS STMTS STMT ,规约： STMT->id = EXPR ; 
+52,0 1 3 4 ,# { DECLS STMTS ,规约： STMTS->STMTS STMT 
+53,0 1 3 4 8 ,# { DECLS STMTS id ,移进
+54,0 1 3 4 8 34 ,# { DECLS STMTS id := ,移进
+55,0 1 3 4 8 34 43 ,# { DECLS STMTS id := id ,移进
+56,0 1 3 4 8 34 47 ,# { DECLS STMTS id := FACTOR ,规约： FACTOR->id 
+57,0 1 3 4 8 34 42 ,# { DECLS STMTS id := NEGA ,规约： NEGA->FACTOR 
+58,0 1 3 4 8 34 39 ,# { DECLS STMTS id := TERM ,规约： TERM->NEGA 
+59,0 1 3 4 8 34 36 ,# { DECLS STMTS id := EXPR ,规约： EXPR->TERM 
+60,0 1 3 4 8 34 36 68 ,# { DECLS STMTS id := EXPR < ,移进
+61,0 1 3 4 8 34 36 64 ,# { DECLS STMTS id := EXPR ROP ,规约： ROP->< 
+62,0 1 3 4 8 34 36 64 43 ,# { DECLS STMTS id := EXPR ROP id ,移进
+63,0 1 3 4 8 34 36 64 47 ,# { DECLS STMTS id := EXPR ROP FACTOR ,规约： FACTOR->id 
+64,0 1 3 4 8 34 36 64 42 ,# { DECLS STMTS id := EXPR ROP NEGA ,规约： NEGA->FACTOR 
+65,0 1 3 4 8 34 36 64 39 ,# { DECLS STMTS id := EXPR ROP TERM ,规约： TERM->NEGA 
+66,0 1 3 4 8 34 36 64 71 ,# { DECLS STMTS id := EXPR ROP EXPR ,规约： EXPR->TERM 
+67,0 1 3 4 8 34 44 ,# { DECLS STMTS id := REL ,规约： REL->EXPR ROP EXPR 
+68,0 1 3 4 8 34 41 ,# { DECLS STMTS id := NOT ,规约： NOT->REL 
+69,0 1 3 4 8 34 37 ,# { DECLS STMTS id := JOIN ,规约： JOIN->NOT 
+70,0 1 3 4 8 34 37 51 ,# { DECLS STMTS id := JOIN && ,移进
+71,0 1 3 4 8 34 37 51 43 ,# { DECLS STMTS id := JOIN && id ,移进
+72,0 1 3 4 8 34 37 51 47 ,# { DECLS STMTS id := JOIN && FACTOR ,规约： FACTOR->id 
+73,0 1 3 4 8 34 37 51 42 ,# { DECLS STMTS id := JOIN && NEGA ,规约： NEGA->FACTOR 
+74,0 1 3 4 8 34 37 51 39 ,# { DECLS STMTS id := JOIN && TERM ,规约： TERM->NEGA 
+75,0 1 3 4 8 34 37 51 36 ,# { DECLS STMTS id := JOIN && EXPR ,规约： EXPR->TERM 
