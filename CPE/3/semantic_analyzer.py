@@ -232,7 +232,7 @@ class SemanticAnalyzer:
                 Quadruples(self.GetNextStateNum(), ":=", arg1_name, "-", result_name)
             )
             conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left,txt_value=""
+                symbol_name=production.left, txt_value=""
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
@@ -478,20 +478,12 @@ class SemanticAnalyzer:
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
-        elif "ADD" == production.left and production.right[0] == "+":
+        elif "ADD" == production.left:
             # ADD -> +
             # 由规约后的产生式左部构造一个文法符号属性
-            conclude_symbol_info = GrammarSymbolInfo()
-            conclude_symbol_info.symbol_name = production.left
-            conclude_symbol_info.txt_value = "+"
-            self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
-
-        elif "ADD" == production.left and production.right[0] == "-":
-            # ADD -> -
-            # 由规约后的产生式左部构造一个文法符号属性
-            conclude_symbol_info = GrammarSymbolInfo()
-            conclude_symbol_info.symbol_name = production.left
-            conclude_symbol_info.txt_value = "-"
+            conclude_symbol_info = GrammarSymbolInfo(
+                symbol_name=production.left, txt_value=production.right[0]
+            )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "TERM" == production.left and production.right[0] == "TERM":
@@ -532,19 +524,11 @@ class SemanticAnalyzer:
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
-        elif "MUL" == production.left and production.right[0] == "*":
+        elif "MUL" == production.left:
             # MUL -> *
             # 由规约后的产生式左部构造一个文法符号属性
             conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value="*"
-            )
-            self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
-
-        elif "MUL" == production.left and production.right[0] == "/":
-            # MUL -> /
-            # 由规约后的产生式左部构造一个文法符号属性
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value="/"
+                symbol_name=production.left, txt_value=production.right[0]
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
@@ -591,7 +575,6 @@ class SemanticAnalyzer:
                 ].GetSymbolName(symbol_expression.pos.symbol_pos),
                 pos=symbol_expression.pos,
             )
-
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "FACTOR" == production.left and production.right[0] == "id":
