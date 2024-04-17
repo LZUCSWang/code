@@ -65,23 +65,12 @@ class SymbolTable:
     def AddSymbol(self, *args):
         if len(args) == 1 and isinstance(args[0], Symbol):
             return self.AddSymbolSymbol(args[0])
-        elif len(args) == 1 and isinstance(args[0], str):
-            return self.AddSymbolString(args[0])
         else:
             return self.AddSymbolDefault()
 
     def AddSymbolSymbol(self, sb):
         if self.FindSymbol(sb.name) != -1:
             return -1
-        self.table_.append(sb)
-        return len(self.table_) - 1
-
-    def AddSymbolString(self, str_val):
-        tmp_name = "T" + str(len(self.table_))
-        sb = Symbol()
-        sb.name = tmp_name
-        sb.mode = "TEMP"
-        sb.value = str_val
         self.table_.append(sb)
         return len(self.table_) - 1
 

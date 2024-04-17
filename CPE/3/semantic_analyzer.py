@@ -135,7 +135,6 @@ class SemanticAnalyzer:
                 txt_value=symbol_info_stack[-3].txt_value.copy(),
             )
             conclude_symbol_info.txt_value.append(symbol_info_stack[-1].txt_value)
-
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "NAMES" == production.left and production.right[0] == "NAME":
@@ -442,8 +441,7 @@ class SemanticAnalyzer:
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "ADD" == production.left:
-            # ADD -> +
-            # 由规约后的产生式左部构造一个文法符号属性
+            # ADD -> + || -
             conclude_symbol_info = GrammarSymbolInfo(
                 symbol_name=production.left, txt_value=production.right[0]
             )

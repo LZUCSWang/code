@@ -5,16 +5,16 @@ DECLS: $ bool int
 DECL: bool int
 NAMES: id
 NAME: id
-STMTS: if read id write { while
-STMT: if read id { write while
-EXPR: - id number (
-ADD: - +
-TERM: - id number (
-MUL: * /
-NEGA: - id number (
-FACTOR: id ( number
-BOOL: - id ( ! number
-JOIN: - id ( ! number
-NOT: - id ( ! number
-REL: - id number (
-ROP: != >= > == < <=
+STMTS: while read id if write {
+STMT: while read id if write {
+EXPR: ( number id -
+ADD: + -
+TERM: ( number id -
+MUL: / *
+NEGA: ( number id -
+FACTOR: ( number id
+BOOL: ( ! id number -
+JOIN: ( ! id number -
+NOT: ( ! id number -
+REL: ( number id -
+ROP: > >= <= < != ==

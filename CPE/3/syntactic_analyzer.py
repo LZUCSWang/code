@@ -981,7 +981,7 @@ class SyntacticAnalyzer:
         with open(filename, "w") as file:
             self.PrintTree(root, file=file)
 
-if __name__ == "__main__": # TODO: true 和 false 布尔型数据的常量在文法的哪个位置
+if __name__ == "__main__": 
 
     num = int(input("请输入要分析的源程序编号[1-10]:"))
     file_name =f"./sourceProgram/sourceProgram{num}.txt"
