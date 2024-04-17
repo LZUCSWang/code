@@ -1,20 +1,20 @@
 First¼¯ºÏ£º
 Start: {
 PROG: {
-DECLS: bool int $
-DECL: int bool
+DECLS: $ bool int
+DECL: bool int
 NAMES: id
 NAME: id
-STMTS: while id if { write read
-STMT: while id if { write read
-EXPR: - id ( number
+STMTS: if read id write { while
+STMT: if read id { write while
+EXPR: - id number (
 ADD: - +
-TERM: - id ( number
+TERM: - id number (
 MUL: * /
-NEGA: - id ( number
+NEGA: - id number (
 FACTOR: id ( number
-BOOL: id ! ( number -
-JOIN: id ! ( number -
-NOT: id ! ( number -
-REL: - id ( number
-ROP: < > != <= == >=
+BOOL: - id ( ! number
+JOIN: - id ( ! number
+NOT: - id ( ! number
+REL: - id number (
+ROP: != >= > == < <=

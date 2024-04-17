@@ -16,14 +16,9 @@ class SemanticAnalyzer:
 
         self.next_state_num_ = 1  # 从1开始，0留给跳转到main的指令
         self.backpatching_level_ = 0  # 从0开始
-        self.main_line = -1
-        self.while_cnt = 0
-        self.if_cnt = 0
-        self.w_j_label_num = 0
 
         self.temp_string_ = ""
         self.quadruples_stack_ = []
-        self.quadruples_stack_length = [0] * 20
         self.temp = [0] * 20
         self.temp_else = [0] * 20
 
@@ -50,7 +45,6 @@ class SemanticAnalyzer:
                 arg_name = (
                     arg_name
                     + "-"
-                    + self.symbol_tables_[sp.table_pos].GetTableName()
                     + "Var"
                 )
         else:
@@ -58,7 +52,6 @@ class SemanticAnalyzer:
                 self.symbol_tables_[sp.table_pos].GetTableName()
             )
             symbol = self.symbol_tables_[0].GetSymbol(pos)
-            symbol_pos_minus = sp.symbol_pos - 1
             arg_name = (
                 arg_name + "-" + symbol.name + "_paramerter " + str(sp.symbol_pos)
             )
@@ -71,7 +64,6 @@ class SemanticAnalyzer:
                 with open("./gen_data/target_file/intermediate_code.txt", "w") as file:
                     file.write(self.temp_string_)
             else:  # 需要回填
-                self.quadruples_stack_length[self.backpatching_level_] += 1
                 self.quadruples_stack_.append(quadruples)
                 self.quadruples_stack_.sort(key=lambda x: x.num)
         return True
@@ -84,26 +76,19 @@ class SemanticAnalyzer:
     def ExecuteSemanticCheck(self, symbol_info_stack, production):
         if "PROG" == production.left:
             # PROG -> { DECLS STMTS }
-            # self.PrintQuadruples()
             print("中间代码生成完毕！")
-            conclude_symbol_info = GrammarSymbolInfo()
-            conclude_symbol_info.symbol_name = production.left
-            conclude_symbol_info.txt_value = ""
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "DECLS" == production.left and production.right[0] == "DECLS":
             # DECLS -> DECLS DECL
             # 由规约后的产生式左部构造一个文法符号属性
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value=""
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "DECLS" == production.left and production.right[0] == "$":
             # DECLS -> $
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value=""
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             symbol_info_stack.append(conclude_symbol_info)
 
         elif "DECL" == production.left and production.right[0] == "int":
@@ -184,17 +169,13 @@ class SemanticAnalyzer:
         elif "STMTS" == production.left and production.right[0] == "STMTS":
             # STMTS -> STMTS STMT
             # 由规约后的产生式左部构造一个文法符号属性
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value=""
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "STMTS" == production.left and production.right[0] == "STMTS":
             # STMTS -> STMT
             # 由规约后的产生式左部构造一个文法符号属性
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value=""
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif (
@@ -206,8 +187,6 @@ class SemanticAnalyzer:
             # 获取identifier与Expression的文法符号属性
             symbol_expression = symbol_info_stack[-2]
             symbol_identifier = symbol_info_stack[-4]
-            # SymbolTable current_table = self.symbol_tables_[self.current_symbol_table_stack_.back()]
-
             # 在符号表栈中一级级逆序寻找 identifier 是否被定义过
             identifier_pos = -1
             identifier_layer = len(self.current_symbol_table_stack_) - 1
@@ -231,9 +210,7 @@ class SemanticAnalyzer:
             self.PrintQuadruples(
                 Quadruples(self.GetNextStateNum(), ":=", arg1_name, "-", result_name)
             )
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value=""
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif (
@@ -273,9 +250,7 @@ class SemanticAnalyzer:
             self.PrintQuadruples(
                 Quadruples(self.GetNextStateNum(), ":=", arg1_name, "-", result_name)
             )
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left, txt_value=""
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "else" in production.right:
@@ -283,6 +258,7 @@ class SemanticAnalyzer:
             symbol_id = symbol_info_stack[-5]
             symbol_pos = self.symbol_tables_[0].FindSymbol(symbol_id.txt_value)
             symbol_name = self.GetArgName(SymbolPos(0, symbol_pos))
+            backpatching_level_temp = self.backpatching_level_
             backpatching_level_temp = self.backpatching_level_
             self.PrintQuadruples(
                 Quadruples(
@@ -317,10 +293,7 @@ class SemanticAnalyzer:
                 for Qua in self.quadruples_stack_:
                     self.PrintQuadruples(Qua)
                 self.quadruples_stack_ = []
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left,
-                txt_value="",
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "if" == production.right[0]:
@@ -355,7 +328,6 @@ class SemanticAnalyzer:
                 self.quadruples_stack_ = []
             conclude_symbol_info = GrammarSymbolInfo(
                 symbol_name=production.left,
-                txt_value="",
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
@@ -399,18 +371,13 @@ class SemanticAnalyzer:
                 )
             )
             self.GetNextStateNum()
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left,
-                txt_value="",
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "{" == production.right[0]:
             # STMT -> { STMTS STMT }
             # 由规约后的产生式左部构造一个文法符号属性
-            conclude_symbol_info = GrammarSymbolInfo()
-            conclude_symbol_info.symbol_name = production.left
-            conclude_symbol_info.txt_value = ""
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "read" == production.right[0]:
@@ -421,10 +388,7 @@ class SemanticAnalyzer:
             self.PrintQuadruples(
                 Quadruples(self.GetNextStateNum(), "read", "-", "-", symbol_name)
             )
-            conclude_symbol_info = GrammarSymbolInfo(
-                symbol_name=production.left,
-                txt_value="",
-            )
+            conclude_symbol_info = GrammarSymbolInfo(symbol_name=production.left)
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "write" == production.right[0]:
@@ -437,7 +401,6 @@ class SemanticAnalyzer:
             )
             conclude_symbol_info = GrammarSymbolInfo(
                 symbol_name=production.left,
-                txt_value="",
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
@@ -598,7 +561,6 @@ class SemanticAnalyzer:
                 symbol_name=production.left,
                 txt_value=symbol_name,
                 pos=SymbolPos(1, symbol_pos),
-                is_imm=True,
             )
 
             self.PrintQuadruples(
@@ -637,7 +599,6 @@ class SemanticAnalyzer:
                 txt_value=symbol_name,
                 pos=SymbolPos(1, symbol_pos),
             )
-
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "BOOL" == production.left and production.right[0] == "JOIN":
@@ -648,7 +609,7 @@ class SemanticAnalyzer:
             conclude_symbol_info = GrammarSymbolInfo(
                 symbol_name=production.left,
                 txt_value=symbol_name,
-                pos=SymbolPos(1, symbol_name),
+                pos=SymbolPos(1, symbol_pos),
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
@@ -687,7 +648,7 @@ class SemanticAnalyzer:
             conclude_symbol_info = GrammarSymbolInfo(
                 symbol_name=production.left,
                 txt_value=symbol_name,
-                pos=symbol_pos(1, symbol_pos),
+                pos=SymbolPos(1, symbol_pos),
             )
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
@@ -717,7 +678,6 @@ class SemanticAnalyzer:
                 txt_value=symbol_name,
                 pos=SymbolPos(1, symbol_pos),
             )
-
             self.PopAndAppend(symbol_info_stack, conclude_symbol_info, production)
 
         elif "REL" == production.left and production.right[0] == "EXPR":
