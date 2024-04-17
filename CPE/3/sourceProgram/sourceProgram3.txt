@@ -1,14 +1,12 @@
 /*program 3: add numbers from 1 to 100 
- * and print the result.
+ *and print the result.
  */
 {
 	int a , sum ;
 	bool  b ;
 	a = 1 ;
-	a = sum;
-	a = -1 ;
 	sum = 0 ;
-	b := true > 1 + 1 ;
+	b := a <= 100 ;
 	while b do 
 	{
 		sum = sum + a ;
@@ -17,3 +15,4 @@
 	}
 	write  sum  ;
 }
+ 

@@ -1,0 +1,150 @@
+step 1 , type: BOARDER , value: {
+
+step 2 , type: TYPE , value: int
+
+step 3 , type: IDENTIFIER , value: a
+
+step 4 , type: BOARDER , value: ,
+
+step 5 , type: IDENTIFIER , value: b
+
+step 6 , type: BOARDER , value: ,
+
+step 7 , type: IDENTIFIER , value: c
+
+step 8 , type: BOARDER , value: ;
+
+step 9 , type: TYPE , value: bool
+
+step 10 , type: IDENTIFIER , value: cond1
+
+step 11 , type: BOARDER , value: ,
+
+step 12 , type: IDENTIFIER , value: cond2
+
+step 13 , type: BOARDER , value: ,
+
+step 14 , type: IDENTIFIER , value: cond3
+
+step 15 , type: BOARDER , value: ;
+
+step 16 , type: KEYWARD , value: read
+
+step 17 , type: IDENTIFIER , value: a
+
+step 18 , type: BOARDER , value: ;
+
+step 19 , type: KEYWARD , value: read
+
+step 20 , type: IDENTIFIER , value: b
+
+step 21 , type: BOARDER , value: ;
+
+step 22 , type: KEYWARD , value: read
+
+step 23 , type: IDENTIFIER , value: c
+
+step 24 , type: BOARDER , value: ;
+
+step 25 , type: IDENTIFIER , value: cond1
+
+step 26 , type: OPERATOR , value: :=
+
+step 27 , type: IDENTIFIER , value: a
+
+step 28 , type: OPERATOR , value: >=
+
+step 29 , type: IDENTIFIER , value: b
+
+step 30 , type: BOARDER , value: ;
+
+step 31 , type: IDENTIFIER , value: cond2
+
+step 32 , type: OPERATOR , value: :=
+
+step 33 , type: IDENTIFIER , value: a
+
+step 34 , type: OPERATOR , value: >=
+
+step 35 , type: IDENTIFIER , value: c
+
+step 36 , type: BOARDER , value: ;
+
+step 37 , type: IDENTIFIER , value: cond3
+
+step 38 , type: OPERATOR , value: :=
+
+step 39 , type: IDENTIFIER , value: b
+
+step 40 , type: OPERATOR , value: >=
+
+step 41 , type: IDENTIFIER , value: c
+
+step 42 , type: BOARDER , value: ;
+
+step 43 , type: KEYWARD , value: if
+
+step 44 , type: IDENTIFIER , value: cond1
+
+step 45 , type: KEYWARD , value: then
+
+step 46 , type: KEYWARD , value: if
+
+step 47 , type: IDENTIFIER , value: cond2
+
+step 48 , type: KEYWARD , value: then
+
+step 49 , type: KEYWARD , value: write
+
+step 50 , type: IDENTIFIER , value: a
+
+step 51 , type: BOARDER , value: ;
+
+step 52 , type: KEYWARD , value: else
+
+step 53 , type: KEYWARD , value: write
+
+step 54 , type: IDENTIFIER , value: c
+
+step 55 , type: BOARDER , value: ;
+
+step 56 , type: IDENTIFIER , value: cond1
+
+step 57 , type: OPERATOR , value: :=
+
+step 58 , type: IDENTIFIER , value: a
+
+step 59 , type: OPERATOR , value: <
+
+step 60 , type: IDENTIFIER , value: b
+
+step 61 , type: BOARDER , value: ;
+
+step 62 , type: KEYWARD , value: if
+
+step 63 , type: IDENTIFIER , value: cond1
+
+step 64 , type: KEYWARD , value: then
+
+step 65 , type: KEYWARD , value: if
+
+step 66 , type: IDENTIFIER , value: cond3
+
+step 67 , type: KEYWARD , value: then
+
+step 68 , type: KEYWARD , value: write
+
+step 69 , type: IDENTIFIER , value: b
+
+step 70 , type: BOARDER , value: ;
+
+step 71 , type: KEYWARD , value: else
+
+step 72 , type: KEYWARD , value: write
+
+step 73 , type: IDENTIFIER , value: c
+
+step 74 , type: BOARDER , value: ;
+
+step 75 , type: BOARDER , value: }
+

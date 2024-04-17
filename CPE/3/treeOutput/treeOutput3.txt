@@ -54,21 +54,14 @@ PROG
                      \--TERM
                        \--NEGA
                          \--FACTOR
-                           \--true
+                           \--a
                    |--ROP
-                     \-->
+                     \--<=
                    \--EXPR
-                     |--EXPR
-                       \--TERM
-                         \--NEGA
-                           \--FACTOR
-                             \--1
-                     |--ADD
-                       \--+
                      \--TERM
                        \--NEGA
                          \--FACTOR
-                           \--1
+                           \--100
            \--;
        \--STMT
          |--while

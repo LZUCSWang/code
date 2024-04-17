@@ -1,0 +1,9 @@
+lui $sp 0x1001 
+lui $gp 0x1000 
+j main  
+addi $sp $sp 4
+addi $sp $sp 4
+addi $sp $sp 4
+addi $sp $sp 4
+addi $sp $sp 4
+addi $sp $sp 4

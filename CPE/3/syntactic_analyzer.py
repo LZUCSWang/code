@@ -858,6 +858,21 @@ class SyntacticAnalyzer:
                     self.action_goto_tables_[(current_state, word_string)].op
                     == SLR_OPERATIONS.MOVE
                 ):  # 移进操作
+                    if get_word.word_string == 'while':
+                        self.sementic_analyzer_.backpatching_level_ += 1
+                        self.sementic_analyzer_.temp[self.sementic_analyzer_.backpatching_level_]=self.sementic_analyzer_.PeekNextStateNum()
+                        self.sementic_analyzer_.GetNextStateNum()
+                        self.sementic_analyzer_.GetNextStateNum()
+
+                    if get_word.word_string == 'if':   
+                        self.sementic_analyzer_.backpatching_level_ += 1
+                        self.sementic_analyzer_.temp[self.sementic_analyzer_.backpatching_level_]=self.sementic_analyzer_.PeekNextStateNum()
+                        self.sementic_analyzer_.GetNextStateNum()
+                        self.sementic_analyzer_.GetNextStateNum()
+                        
+                    if get_word.word_string == 'else':
+                        self.sementic_analyzer_.temp_else[self.sementic_analyzer_.backpatching_level_] = self.sementic_analyzer_.PeekNextStateNum()
+                        self.sementic_analyzer_.GetNextStateNum()
                     self.state_sequence_stack_.append(
                         self.action_goto_tables_[(current_state, word_string)].state
                     )
@@ -914,7 +929,7 @@ class SyntacticAnalyzer:
                         ].state
                     )  # goto对应的状态压入
 
-                    if not self.sementic_analyzer_.MyExecuteSemanticCheck(
+                    if not self.sementic_analyzer_.ExecuteSemanticCheck(
                         self.grammar_symbol_info_stack_, self.productions_[conclude_production_number]
                     ):  # 语义分析错误，则退出
                         return False
@@ -968,10 +983,11 @@ class SyntacticAnalyzer:
 
 if __name__ == "__main__": # TODO: true 和 false 布尔型数据的常量在文法的哪个位置
 
-    file_name ="./sourceProgram/sourceProgram3.txt"
+    num = int(input("请输入要分析的源程序编号[1-10]:"))
+    file_name =f"./sourceProgram/sourceProgram{num}.txt"
     sa = SyntacticAnalyzer()
     if sa.StartAnalize(file_name):
         sa.VisualizeTree(
             sa.tree_node_stack_[0],
-            "./treeOutput/treeOutput3.txt"
+            f"./treeOutput/treeOutput{num}.txt"
         )

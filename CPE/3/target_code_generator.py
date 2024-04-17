@@ -205,33 +205,33 @@ class TargetCodeGenerator:
                     addr = f"{offset_fp * 4}{addr}"
         return addr
 
-    def LoadImmToReg(self, imm, pos):
-        symbol_tables = self.symbol_tables_pt_
-        reg = self.GetTempReg()  # 获取下一个可用的寄存器
+    # def LoadImmToReg(self, imm, pos):
+    #     symbol_tables = self.symbol_tables_pt_
+    #     reg = self.GetTempReg()  # 获取下一个可用的寄存器
 
-        if self.registers_[reg].is_possessed:  # 如果寄存器已被占用，需要先写回到内存
-            sw_mem_addr = self.GetMemAddr(self.registers_[reg].content_info)
-            self.PrintQuadruples(
-                Instructions("sw", self.registers_[reg].name, sw_mem_addr, "")
-            )
-            # 标记寄存器内容已不在寄存器上
-            reg_pos = self.registers_[reg].content_info
-            symbol_tables[reg_pos.table_pos].GetSymbol(reg_pos.symbol_pos).reg = -1
+    #     if self.registers_[reg].is_possessed:  # 如果寄存器已被占用，需要先写回到内存
+    #         sw_mem_addr = self.GetMemAddr(self.registers_[reg].content_info)
+    #         self.PrintQuadruples(
+    #             Instructions("sw", self.registers_[reg].name, sw_mem_addr, "")
+    #         )
+    #         # 标记寄存器内容已不在寄存器上
+    #         reg_pos = self.registers_[reg].content_info
+    #         symbol_tables[reg_pos.table_pos].GetSymbol(reg_pos.symbol_pos).reg = -1
 
-        self.PrintQuadruples(
-            Instructions("addi", self.registers_[reg].name, "$zero", imm)
-        )  # 加载立即数到寄存器
+    #     self.PrintQuadruples(
+    #         Instructions("addi", self.registers_[reg].name, "$zero", imm)
+    #     )  # 加载立即数到寄存器
 
-        sb = symbol_tables[pos.table_pos].GetSymbol(pos.symbol_pos)
-        # 设置寄存器信息
-        self.registers_[reg].content_info = pos
-        self.registers_[reg].is_possessed = True
-        self.SetMissTime(reg)
+    #     sb = symbol_tables[pos.table_pos].GetSymbol(pos.symbol_pos)
+    #     # 设置寄存器信息
+    #     self.registers_[reg].content_info = pos
+    #     self.registers_[reg].is_possessed = True
+    #     self.SetMissTime(reg)
 
-        # 设置符号信息
-        sb.reg = reg
+    #     # 设置符号信息
+    #     sb.reg = reg
 
-        return True
+    #     return True
 
     def SetArgBeReady(self, pos):
         name = "$t"

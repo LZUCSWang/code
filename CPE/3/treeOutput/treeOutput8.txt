@@ -1,170 +1,170 @@
-\-- PROG
-    +-- {
-    +-- DECLS
-    |   +-- DECLS
-    |   |   +-- DECLS
-    |   |   |   \-- $
-    |   |   \-- DECL
-    |   |       +-- int
-    |   |       +-- NAMES
-    |   |       |   +-- NAMES
-    |   |       |   |   +-- NAMES
-    |   |       |   |   |   \-- NAME
-    |   |       |   |   |       \-- a
-    |   |       |   |   +-- ,
-    |   |       |   |   \-- NAME
-    |   |       |   |       \-- b
-    |   |       |   +-- ,
-    |   |       |   \-- NAME
-    |   |       |       \-- c
-    |   |       \-- ;
-    |   \-- DECL
-    |       +-- bool
-    |       +-- NAMES
-    |       |   +-- NAMES
-    |       |   |   +-- NAMES
-    |       |   |   |   \-- NAME
-    |       |   |   |       \-- cond1
-    |       |   |   +-- ,
-    |       |   |   \-- NAME
-    |       |   |       \-- cond2
-    |       |   +-- ,
-    |       |   \-- NAME
-    |       |       \-- cond3
-    |       \-- ;
-    +-- STMTS
-    |   +-- STMTS
-    |   |   +-- STMTS
-    |   |   |   +-- STMTS
-    |   |   |   |   +-- STMTS
-    |   |   |   |   |   +-- STMTS
-    |   |   |   |   |   |   +-- STMTS
-    |   |   |   |   |   |   |   +-- STMTS
-    |   |   |   |   |   |   |   |   +-- STMTS
-    |   |   |   |   |   |   |   |   |   \-- STMT
-    |   |   |   |   |   |   |   |   |       +-- read
-    |   |   |   |   |   |   |   |   |       +-- a
-    |   |   |   |   |   |   |   |   |       \-- ;
-    |   |   |   |   |   |   |   |   \-- STMT
-    |   |   |   |   |   |   |   |       +-- read
-    |   |   |   |   |   |   |   |       +-- b
-    |   |   |   |   |   |   |   |       \-- ;
-    |   |   |   |   |   |   |   \-- STMT
-    |   |   |   |   |   |   |       +-- read
-    |   |   |   |   |   |   |       +-- c
-    |   |   |   |   |   |   |       \-- ;
-    |   |   |   |   |   |   \-- STMT
-    |   |   |   |   |   |       +-- cond1
-    |   |   |   |   |   |       +-- :=
-    |   |   |   |   |   |       +-- BOOL
-    |   |   |   |   |   |       |   \-- JOIN
-    |   |   |   |   |   |       |       \-- NOT
-    |   |   |   |   |   |       |           \-- REL
-    |   |   |   |   |   |       |               +-- EXPR
-    |   |   |   |   |   |       |               |   \-- TERM
-    |   |   |   |   |   |       |               |       \-- NEGA
-    |   |   |   |   |   |       |               |           \-- FACTOR
-    |   |   |   |   |   |       |               |               \-- a
-    |   |   |   |   |   |       |               +-- ROP
-    |   |   |   |   |   |       |               |   \-- >=
-    |   |   |   |   |   |       |               \-- EXPR
-    |   |   |   |   |   |       |                   \-- TERM
-    |   |   |   |   |   |       |                       \-- NEGA
-    |   |   |   |   |   |       |                           \-- FACTOR
-    |   |   |   |   |   |       |                               \-- b
-    |   |   |   |   |   |       \-- ;
-    |   |   |   |   |   \-- STMT
-    |   |   |   |   |       +-- cond2
-    |   |   |   |   |       +-- :=
-    |   |   |   |   |       +-- BOOL
-    |   |   |   |   |       |   \-- JOIN
-    |   |   |   |   |       |       \-- NOT
-    |   |   |   |   |       |           \-- REL
-    |   |   |   |   |       |               +-- EXPR
-    |   |   |   |   |       |               |   \-- TERM
-    |   |   |   |   |       |               |       \-- NEGA
-    |   |   |   |   |       |               |           \-- FACTOR
-    |   |   |   |   |       |               |               \-- a
-    |   |   |   |   |       |               +-- ROP
-    |   |   |   |   |       |               |   \-- >=
-    |   |   |   |   |       |               \-- EXPR
-    |   |   |   |   |       |                   \-- TERM
-    |   |   |   |   |       |                       \-- NEGA
-    |   |   |   |   |       |                           \-- FACTOR
-    |   |   |   |   |       |                               \-- c
-    |   |   |   |   |       \-- ;
-    |   |   |   |   \-- STMT
-    |   |   |   |       +-- cond3
-    |   |   |   |       +-- :=
-    |   |   |   |       +-- BOOL
-    |   |   |   |       |   \-- JOIN
-    |   |   |   |       |       \-- NOT
-    |   |   |   |       |           \-- REL
-    |   |   |   |       |               +-- EXPR
-    |   |   |   |       |               |   \-- TERM
-    |   |   |   |       |               |       \-- NEGA
-    |   |   |   |       |               |           \-- FACTOR
-    |   |   |   |       |               |               \-- b
-    |   |   |   |       |               +-- ROP
-    |   |   |   |       |               |   \-- >=
-    |   |   |   |       |               \-- EXPR
-    |   |   |   |       |                   \-- TERM
-    |   |   |   |       |                       \-- NEGA
-    |   |   |   |       |                           \-- FACTOR
-    |   |   |   |       |                               \-- c
-    |   |   |   |       \-- ;
-    |   |   |   \-- STMT
-    |   |   |       +-- if
-    |   |   |       +-- cond1
-    |   |   |       +-- then
-    |   |   |       \-- STMT
-    |   |   |           +-- if
-    |   |   |           +-- cond2
-    |   |   |           +-- then
-    |   |   |           +-- STMT
-    |   |   |           |   +-- write
-    |   |   |           |   +-- a
-    |   |   |           |   \-- ;
-    |   |   |           +-- else
-    |   |   |           \-- STMT
-    |   |   |               +-- write
-    |   |   |               +-- c
-    |   |   |               \-- ;
-    |   |   \-- STMT
-    |   |       +-- cond1
-    |   |       +-- :=
-    |   |       +-- BOOL
-    |   |       |   \-- JOIN
-    |   |       |       \-- NOT
-    |   |       |           \-- REL
-    |   |       |               +-- EXPR
-    |   |       |               |   \-- TERM
-    |   |       |               |       \-- NEGA
-    |   |       |               |           \-- FACTOR
-    |   |       |               |               \-- a
-    |   |       |               +-- ROP
-    |   |       |               |   \-- <
-    |   |       |               \-- EXPR
-    |   |       |                   \-- TERM
-    |   |       |                       \-- NEGA
-    |   |       |                           \-- FACTOR
-    |   |       |                               \-- b
-    |   |       \-- ;
-    |   \-- STMT
-    |       +-- if
-    |       +-- cond1
-    |       +-- then
-    |       \-- STMT
-    |           +-- if
-    |           +-- cond3
-    |           +-- then
-    |           +-- STMT
-    |           |   +-- write
-    |           |   +-- b
-    |           |   \-- ;
-    |           +-- else
-    |           \-- STMT
-    |               +-- write
-    |               +-- c
-    |               \-- ;
-    \-- }
+PROG
+   |--{
+   |--DECLS
+     |--DECLS
+       |--DECLS
+         \--$
+       \--DECL
+         |--int
+         |--NAMES
+           |--NAMES
+             |--NAMES
+               \--NAME
+                 \--a
+             |--,
+             \--NAME
+               \--b
+           |--,
+           \--NAME
+             \--c
+         \--;
+     \--DECL
+       |--bool
+       |--NAMES
+         |--NAMES
+           |--NAMES
+             \--NAME
+               \--cond1
+           |--,
+           \--NAME
+             \--cond2
+         |--,
+         \--NAME
+           \--cond3
+       \--;
+   |--STMTS
+     |--STMTS
+       |--STMTS
+         |--STMTS
+           |--STMTS
+             |--STMTS
+               |--STMTS
+                 |--STMTS
+                   |--STMTS
+                     \--STMT
+                       |--read
+                       |--a
+                       \--;
+                   \--STMT
+                     |--read
+                     |--b
+                     \--;
+                 \--STMT
+                   |--read
+                   |--c
+                   \--;
+               \--STMT
+                 |--cond1
+                 |--:=
+                 |--BOOL
+                   \--JOIN
+                     \--NOT
+                       \--REL
+                         |--EXPR
+                           \--TERM
+                             \--NEGA
+                               \--FACTOR
+                                 \--a
+                         |--ROP
+                           \-->=
+                         \--EXPR
+                           \--TERM
+                             \--NEGA
+                               \--FACTOR
+                                 \--b
+                 \--;
+             \--STMT
+               |--cond2
+               |--:=
+               |--BOOL
+                 \--JOIN
+                   \--NOT
+                     \--REL
+                       |--EXPR
+                         \--TERM
+                           \--NEGA
+                             \--FACTOR
+                               \--a
+                       |--ROP
+                         \-->=
+                       \--EXPR
+                         \--TERM
+                           \--NEGA
+                             \--FACTOR
+                               \--c
+               \--;
+           \--STMT
+             |--cond3
+             |--:=
+             |--BOOL
+               \--JOIN
+                 \--NOT
+                   \--REL
+                     |--EXPR
+                       \--TERM
+                         \--NEGA
+                           \--FACTOR
+                             \--b
+                     |--ROP
+                       \-->=
+                     \--EXPR
+                       \--TERM
+                         \--NEGA
+                           \--FACTOR
+                             \--c
+             \--;
+         \--STMT
+           |--if
+           |--cond1
+           |--then
+           \--STMT
+             |--if
+             |--cond2
+             |--then
+             |--STMT
+               |--write
+               |--a
+               \--;
+             |--else
+             \--STMT
+               |--write
+               |--c
+               \--;
+       \--STMT
+         |--cond1
+         |--:=
+         |--BOOL
+           \--JOIN
+             \--NOT
+               \--REL
+                 |--EXPR
+                   \--TERM
+                     \--NEGA
+                       \--FACTOR
+                         \--a
+                 |--ROP
+                   \--<
+                 \--EXPR
+                   \--TERM
+                     \--NEGA
+                       \--FACTOR
+                         \--b
+         \--;
+     \--STMT
+       |--if
+       |--cond1
+       |--then
+       \--STMT
+         |--if
+         |--cond3
+         |--then
+         |--STMT
+           |--write
+           |--b
+           \--;
+         |--else
+         \--STMT
+           |--write
+           |--c
+           \--;
+   \--}
