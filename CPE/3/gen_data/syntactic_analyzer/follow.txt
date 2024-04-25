@@ -1,20 +1,20 @@
 Follow¼¯ºÏ£º
 Start: #
 PROG: #
-DECLS: int bool while read id if write {
-DECL: int bool while read id if write {
-NAMES: ; ,
-NAME: ; ,
-STMTS: } while read id if write {
-STMT: } while read else id if write {
-EXPR: > + >= ) <= && || < != ; == -
-ADD: ( number id -
-TERM: > / + >= ) <= < && * || != ; == -
-MUL: ( number id -
-NEGA: > / + >= ) <= && || * < != ; == -
-FACTOR: > / + >= ) <= < && * || != ; == -
-BOOL: || ;
-JOIN: || && ;
-NOT: || && ;
-REL: || && ;
-ROP: ( number id -
+DECLS: int while write { read id bool if
+DECL: int while write { read id bool if
+NAMES: , ;
+NAME: , ;
+STMTS: } while write { read id if
+STMT: } while write { else read id if
+EXPR: ; ) != && < + >= > <= - == ||
+ADD: id - ( number
+TERM: ; ) * && < + >= == > / - <= != ||
+MUL: id - ( number
+NEGA: ; ) != * && < + >= > / - <= == ||
+FACTOR: ; ) * && < + >= == > / - <= != ||
+BOOL: ; ||
+JOIN: ; || &&
+NOT: ; || &&
+REL: ; || &&
+ROP: id - ( number

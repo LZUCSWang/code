@@ -1,0 +1,108 @@
+step 1 , type: BOARDER , value: {
+
+step 2 , type: TYPE , value: int
+
+step 3 , type: IDENTIFIER , value: a
+
+step 4 , type: BOARDER , value: ,
+
+step 5 , type: IDENTIFIER , value: b
+
+step 6 , type: BOARDER , value: ,
+
+step 7 , type: IDENTIFIER , value: c
+
+step 8 , type: BOARDER , value: ;
+
+step 9 , type: KEYWARD , value: read
+
+step 10 , type: IDENTIFIER , value: a
+
+step 11 , type: BOARDER , value: ;
+
+step 12 , type: KEYWARD , value: read
+
+step 13 , type: IDENTIFIER , value: b
+
+step 14 , type: BOARDER , value: ;
+
+step 15 , type: IDENTIFIER , value: a
+
+step 16 , type: OPERATOR , value: =
+
+step 17 , type: IDENTIFIER , value: a
+
+step 18 , type: OPERATOR , value: +
+
+step 19 , type: NUM , value: 1
+
+step 20 , type: OPERATOR , value: +
+
+step 21 , type: NUM , value: 2
+
+step 22 , type: OPERATOR , value: *
+
+step 23 , type: NUM , value: 3
+
+step 24 , type: OPERATOR , value: *
+
+step 25 , type: NUM , value: 4
+
+step 26 , type: BOARDER , value: ;
+
+step 27 , type: IDENTIFIER , value: b
+
+step 28 , type: OPERATOR , value: =
+
+step 29 , type: IDENTIFIER , value: b
+
+step 30 , type: OPERATOR , value: *
+
+step 31 , type: NUM , value: 8
+
+step 32 , type: OPERATOR , value: /
+
+step 33 , type: NUM , value: 2
+
+step 34 , type: OPERATOR , value: /
+
+step 35 , type: NUM , value: 4
+
+step 36 , type: BOARDER , value: ;
+
+step 37 , type: IDENTIFIER , value: c
+
+step 38 , type: OPERATOR , value: =
+
+step 39 , type: BOARDER , value: (
+
+step 40 , type: IDENTIFIER , value: a
+
+step 41 , type: OPERATOR , value: +
+
+step 42 , type: IDENTIFIER , value: b
+
+step 43 , type: BOARDER , value: )
+
+step 44 , type: OPERATOR , value: *
+
+step 45 , type: BOARDER , value: (
+
+step 46 , type: IDENTIFIER , value: a
+
+step 47 , type: OPERATOR , value: -
+
+step 48 , type: IDENTIFIER , value: b
+
+step 49 , type: BOARDER , value: )
+
+step 50 , type: BOARDER , value: ;
+
+step 51 , type: KEYWARD , value: write
+
+step 52 , type: IDENTIFIER , value: c
+
+step 53 , type: BOARDER , value: ;
+
+step 54 , type: BOARDER , value: }
+
