@@ -1,6 +1,0 @@
-Instance     Pop_Size     NeighborhoodSize
-DTLZ1        300	  30
-DTLZ2        300	  30
-ZDT1         100          10
-ZDT2         100          10
-ZDT3         100          10
