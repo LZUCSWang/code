@@ -1,0 +1,7 @@
+\begin{thebibliography}{lo}
+\interlinepenalty=10000
+\setlength{\itemsep}{0bp}\setlength{\parskip}{0pt}\small
+\bibitem{mcmahan2017communication} B.~McMahan, E.~Moore, D.~Ramage, et~al. Communication-efficient learning of deep networks from decentralized data[C]. Artificial intelligence and statistics, 2017, 1273-1282
+\bibitem{lecun1998gradient} Y.~LeCun, L.~Bottou, Y.~Bengio, et~al. Gradient-based learning applied to document recognition[J]. Proceedings of the IEEE, 1998, 86(11): 2278-2324
+\bibitem{kim2016character} Y.~Kim, Y.~Jernite, D.~Sontag, et~al. Character-aware neural language models[C]. Proceedings of the AAAI conference on artificial intelligence, 2016, 2741-2749
+\end{thebibliography}
