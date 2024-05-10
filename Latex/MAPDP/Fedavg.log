@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.5)  8 MAY 2024 10:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.5)  10 MAY 2024 09:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1283,70 +1283,101 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [9
 
-] [10
-
-] (./Fedavg.toc) [11
-
-] [12
-
-] [13
-
-] [14
-
-] (./Fedavg.toc) [15
+] (./Fedavg.toc) [10
 
 ]
-<model_structure.png, id=1506, 1708.3825pt x 685.56125pt>
+<show.png, id=1075, 668.4975pt x 269.005pt>
+File: show.png Graphic file (type png)
+<use show.png>
+Package pdftex.def Info: show.png  used on input line 152.
+(pdftex.def)             Requested size: 184.3758pt x 74.1921pt.
+
+Overfull \vbox (26.57336pt too high) detected at line 152
+ []
+
+[11
+
+ <./show.png>]
+File: show.png Graphic file (type png)
+<use show.png>
+Package pdftex.def Info: show.png  used on input line 169.
+(pdftex.def)             Requested size: 184.3758pt x 74.1921pt.
+ [12
+
+] (./Fedavg.toc) [13
+
+]
+<model_structure.png, id=1359, 1708.3825pt x 685.56125pt>
 File: model_structure.png Graphic file (type png)
 <use model_structure.png>
-Package pdftex.def Info: model_structure.png  used on input line 335.
+Package pdftex.def Info: model_structure.png  used on input line 180.
 (pdftex.def)             Requested size: 339.97604pt x 136.42986pt.
 
-Overfull \hbox (32.68617pt too wide) in paragraph at lines 335--335
+Overfull \hbox (32.68617pt too wide) in paragraph at lines 180--180
  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 335.
+LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 180.
 (d:/Program Files/texlive/2024/texmf-dist/tex/latex/zhmetrics/c70zhhei.fd
 File: c70zhhei.fd 2009/09/23 4.8.2
-) [16
+) [14
 
- <./model_structure.png>] [17
-
-] [18
-
-] [19
-
-] (./Fedavg.toc) [20
+ <./model_structure.png>] [15
 
 ]
-<table1.png, id=1963, 1008.76875pt x 448.67625pt>
+<PCE.png, id=1545, 599.23875pt x 724.7075pt>
+File: PCE.png Graphic file (type png)
+<use PCE.png>
+Package pdftex.def Info: PCE.png  used on input line 209.
+(pdftex.def)             Requested size: 122.91406pt x 148.6434pt.
+ [16
+
+ <./PCE.png>]
+<CE.png, id=1643, 596.2275pt x 733.74126pt>
+File: CE.png Graphic file (type png)
+<use CE.png>
+Package pdftex.def Info: CE.png  used on input line 234.
+(pdftex.def)             Requested size: 122.91406pt x 151.25763pt.
+ [17
+
+ <./CE.png>]
+<CD.png, id=1736, 664.4825pt x 730.73pt>
+File: CD.png Graphic file (type png)
+<use CD.png>
+Package pdftex.def Info: CD.png  used on input line 265.
+(pdftex.def)             Requested size: 122.91406pt x 135.16063pt.
+ [18
+
+ <./CD.png>] (./Fedavg.toc) [19
+
+]
+<table1.png, id=1928, 1008.76875pt x 448.67625pt>
 File: table1.png Graphic file (type png)
 <use table1.png>
-Package pdftex.def Info: table1.png  used on input line 397.
+Package pdftex.def Info: table1.png  used on input line 275.
 (pdftex.def)             Requested size: 302.63297pt x 134.60391pt.
- [21
+ [20
 
  <./table1.png>]
-<graph.png, id=2054, 618.31pt x 823.075pt>
+<graph.png, id=2020, 618.31pt x 823.075pt>
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package pdftex.def Info: graph.png  used on input line 405.
+Package pdftex.def Info: graph.png  used on input line 283.
 (pdftex.def)             Requested size: 123.6598pt x 164.61208pt.
- [22
+ [21
 
- <./graph.png>] (./Fedavg.toc) [23
+ <./graph.png>] (./Fedavg.toc) [22
 
-] [24
+] [23
 
-] (./Fedavg.toc) [25
+] (./Fedavg.toc) [24
 
-] (./Fedavg.bbl) [26
+] (./Fedavg.bbl) [25
 
 ]
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 35.82726pt on input line 429.
- [27
+(Font)              scaled to size 35.82726pt on input line 307.
+ [26
 
 ]
 \tf@nav=\write5
@@ -1365,18 +1396,21 @@ L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 31027 strings out of 474115
- 585785 string characters out of 5740621
- 1956190 words of memory out of 5000000
- 52601 multiletter control sequences out of 15000+600000
- 576707 words of font info for 83 fonts, out of 8000000 for 9000
+ 31117 strings out of 474115
+ 586988 string characters out of 5740621
+ 1957190 words of memory out of 5000000
+ 52675 multiletter control sequences out of 15000+600000
+ 589043 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,123p,731b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
-Output written on Fedavg.pdf (27 pages, 691552 bytes).
+
+pdfTeX warning (dest): name{Navigation27} has been referenced but does not exist, replaced by a fixed one
+
+<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
+Output written on Fedavg.pdf (26 pages, 986144 bytes).
 PDF statistics:
- 2694 PDF objects out of 2984 (max. 8388607)
- 1695 compressed objects within 17 object streams
- 65 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2696 PDF objects out of 2984 (max. 8388607)
+ 1683 compressed objects within 17 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
