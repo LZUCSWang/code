@@ -31,8 +31,6 @@ def send_email(subject):
     message = MIMEText("Python穉uto", "plain", "utf-8")
     message["From"] = Header("Sender<%s>" % sender)  # 发送者
     message["To"] = Header("Receiver<%s>" % receivers[0])  # 接收者
-
-    # subject = 'Python SMTP 邮件测试'
     message["Subject"] = Header(subject, "utf-8")
 
     try:
