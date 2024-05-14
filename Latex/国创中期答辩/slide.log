@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.5)  14 MAY 2024 09:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.5)  14 MAY 2024 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -950,88 +950,88 @@ File: UTF8.chr 2021/10/16 4.8.5
 ) (./slide.aux)
 \openout1 = `slide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1086,64 +1086,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (d:/Program Files/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 40.
  (./slide.out) (./slide.out)
 \@outlinefile=\write5
 \openout5 = `slide.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 41.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 41.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 40.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 41.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 41.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 41.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 41.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 41.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 41.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 41.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 41.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 41.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 41.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 41.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 41.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 41.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 41.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 41.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 41.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 41.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 40.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 40.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 41.
+(Font)              `pureletters' in the math version `normal' on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 41.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 40.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 41.
+(Font)              `pureletters' in the math version `bold' on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 41.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 41.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 40.
  (d:/Program Files/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (d:/Program Files/texlive/2024/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1161,18 +1161,18 @@ Dictionary: translator-theorem-dictionary, Language: ChineseUTF8 2022/07/14 v2.5
 )
 \c@lstlisting=\count411
  (./slide.nav)
-LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 41.
+LaTeX Font Info:    Trying to load font information for C70+zhhei on input line 40.
  (d:/Program Files/texlive/2024/texmf-dist/tex/latex/zhmetrics/c70zhhei.fd
 File: c70zhhei.fd 2009/09/23 4.8.2
 )
-LaTeX Font Info:    Trying to load font information for C70+zhkai on input line 51.
+LaTeX Font Info:    Trying to load font information for C70+zhkai on input line 50.
  (d:/Program Files/texlive/2024/texmf-dist/tex/latex/zhmetrics/c70zhkai.fd
 File: c70zhkai.fd 2009/09/23 4.8.2
 )
 <pic/logo.png, id=120, 80.3pt x 80.3pt>
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 51.
+Package pdftex.def Info: pic/logo.png  used on input line 50.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  (d:/Program Files/texlive/2024/texmf-dist/tex/generic/ctex/zhmap/ctex-zhmap-windows.tex
 File: ctex-zhmap-windows.tex 2022/07/14 v2.5.10 Windows font map loader for pdfTeX and DVIPDFMx (CTEX)
@@ -1195,84 +1195,84 @@ Non-PDF special ignored!
 {d:/Program Files/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./pic/logo.png>] (./slide.toc)
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 55.
+Package pdftex.def Info: pic/logo.png  used on input line 53.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [2
 
 ] (./slide.toc)
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 58.
+Package pdftex.def Info: pic/logo.png  used on input line 56.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [3
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
  (d:/Program Files/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
  (d:/Program Files/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 78.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 75.
  (d:/Program Files/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
-Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyle (quanjiao) on input line 78.
+Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyle (quanjiao) on input line 75.
 
 
-LaTeX Warning: Citation `8249536' on page 4 undefined on input line 78.
+LaTeX Warning: Citation `8249536' on page 4 undefined on input line 75.
 
 <pic/1.png, id=458, 475.7775pt x 356.33125pt>
 File: pic/1.png Graphic file (type png)
 <use pic/1.png>
-Package pdftex.def Info: pic/1.png  used on input line 78.
+Package pdftex.def Info: pic/1.png  used on input line 75.
 (pdftex.def)             Requested size: 95.15381pt x 71.26498pt.
 <pic/2.png, id=459, 1606.0pt x 1204.5pt>
 File: pic/2.png Graphic file (type png)
 <use pic/2.png>
-Package pdftex.def Info: pic/2.png  used on input line 78.
+Package pdftex.def Info: pic/2.png  used on input line 75.
 (pdftex.def)             Requested size: 128.48262pt x 96.36197pt.
 
-Overfull \vbox (0.3722pt too high) detected at line 78
+Overfull \vbox (0.3722pt too high) detected at line 75
  []
 
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 78.
+Package pdftex.def Info: pic/logo.png  used on input line 75.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
 [4
 
  <./pic/1.png> <./pic/2.png>]
 
-LaTeX Warning: Citation `8470897' on page 5 undefined on input line 88.
+LaTeX Warning: Citation `8470897' on page 5 undefined on input line 84.
 
 
-LaTeX Warning: Citation `9018112' on page 5 undefined on input line 88.
+LaTeX Warning: Citation `9018112' on page 5 undefined on input line 84.
 
 <pic/0.png, id=566, 2110.88625pt x 617.30624pt>
 File: pic/0.png Graphic file (type png)
 <use pic/0.png>
-Package pdftex.def Info: pic/0.png  used on input line 88.
+Package pdftex.def Info: pic/0.png  used on input line 84.
 (pdftex.def)             Requested size: 211.10098pt x 61.73424pt.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 88.
+Package pdftex.def Info: pic/logo.png  used on input line 84.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
 [5
 
  <./pic/0.png>]
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 97.
+Package pdftex.def Info: pic/logo.png  used on input line 92.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [6
 
 ] (./slide.toc)
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 99.
+Package pdftex.def Info: pic/logo.png  used on input line 94.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [7
 
@@ -1280,38 +1280,38 @@ Package pdftex.def Info: pic/logo.png  used on input line 99.
 <pic/3.png, id=808, 974.89218pt x 319.94531pt>
 File: pic/3.png Graphic file (type png)
 <use pic/3.png>
-Package pdftex.def Info: pic/3.png  used on input line 110.
+Package pdftex.def Info: pic/3.png  used on input line 103.
 (pdftex.def)             Requested size: 292.46991pt x 95.98433pt.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 110.
+Package pdftex.def Info: pic/logo.png  used on input line 103.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [8
 
  <./pic/3.png>]
 
-LaTeX Warning: Reference `eq:ctr_shale' on page 9 undefined on input line 142.
+LaTeX Warning: Reference `eq:ctr_shale' on page 9 undefined on input line 119.
 
 
-LaTeX Warning: Reference `eq:ctr_shale' on page 9 undefined on input line 142.
+LaTeX Warning: Reference `eq:ctr_shale' on page 9 undefined on input line 119.
 
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 142.
+Package pdftex.def Info: pic/logo.png  used on input line 119.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
 [9
 
 ] (./slide.toc)
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 144.
+Package pdftex.def Info: pic/logo.png  used on input line 121.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [10
 
 ]
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 155.
+Package pdftex.def Info: pic/logo.png  used on input line 130.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [11
 
@@ -1319,11 +1319,11 @@ Package pdftex.def Info: pic/logo.png  used on input line 155.
 <pic/4.png, id=1119, 598.48593pt x 566.86781pt>
 File: pic/4.png Graphic file (type png)
 <use pic/4.png>
-Package pdftex.def Info: pic/4.png  used on input line 164.
+Package pdftex.def Info: pic/4.png  used on input line 138.
 (pdftex.def)             Requested size: 179.54716pt x 170.06165pt.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 164.
+Package pdftex.def Info: pic/logo.png  used on input line 138.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [12
 
@@ -1331,11 +1331,11 @@ Package pdftex.def Info: pic/logo.png  used on input line 164.
 <pic/5.png, id=1196, 206.7725pt x 190.21063pt>
 File: pic/5.png Graphic file (type png)
 <use pic/5.png>
-Package pdftex.def Info: pic/5.png  used on input line 173.
+Package pdftex.def Info: pic/5.png  used on input line 146.
 (pdftex.def)             Requested size: 186.09352pt x 171.18797pt.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 173.
+Package pdftex.def Info: pic/logo.png  used on input line 146.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [13
 
@@ -1343,11 +1343,11 @@ Package pdftex.def Info: pic/logo.png  used on input line 173.
 <pic/7.png, id=1271, 268.00125pt x 187.19937pt>
 File: pic/7.png Graphic file (type png)
 <use pic/7.png>
-Package pdftex.def Info: pic/7.png  used on input line 182.
+Package pdftex.def Info: pic/7.png  used on input line 155.
 (pdftex.def)             Requested size: 241.19888pt x 168.47787pt.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 182.
+Package pdftex.def Info: pic/logo.png  used on input line 155.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [14
 
@@ -1355,26 +1355,26 @@ Package pdftex.def Info: pic/logo.png  used on input line 182.
 <pic/actor_x.png, id=1349, 462.528pt x 346.896pt>
 File: pic/actor_x.png Graphic file (type png)
 <use pic/actor_x.png>
-Package pdftex.def Info: pic/actor_x.png  used on input line 199.
+Package pdftex.def Info: pic/actor_x.png  used on input line 169.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
-Overfull \hbox (34.43419pt too wide) in paragraph at lines 199--199
+Overfull \hbox (34.43419pt too wide) in paragraph at lines 169--169
  [][] 
  []
 
 <pic/critic_x.png, id=1350, 462.528pt x 346.896pt>
 File: pic/critic_x.png Graphic file (type png)
 <use pic/critic_x.png>
-Package pdftex.def Info: pic/critic_x.png  used on input line 199.
+Package pdftex.def Info: pic/critic_x.png  used on input line 169.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 
-Overfull \hbox (34.43419pt too wide) in paragraph at lines 199--199
+Overfull \hbox (34.43419pt too wide) in paragraph at lines 169--169
  [][] 
  []
 
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 199.
+Package pdftex.def Info: pic/logo.png  used on input line 169.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
 [15
 
@@ -1382,11 +1382,11 @@ Package pdftex.def Info: pic/logo.png  used on input line 199.
 <pic/reward.png, id=1425, 462.528pt x 346.896pt>
 File: pic/reward.png Graphic file (type png)
 <use pic/reward.png>
-Package pdftex.def Info: pic/reward.png  used on input line 209.
+Package pdftex.def Info: pic/reward.png  used on input line 178.
 (pdftex.def)             Requested size: 185.0079pt x 138.75594pt.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 209.
+Package pdftex.def Info: pic/logo.png  used on input line 178.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [16
 
@@ -1394,15 +1394,15 @@ Package pdftex.def Info: pic/logo.png  used on input line 209.
 <pic/test1.png, id=1500, 650.43pt x 433.62pt>
 File: pic/test1.png Graphic file (type png)
 <use pic/test1.png>
-Package pdftex.def Info: pic/test1.png  used on input line 219.
+Package pdftex.def Info: pic/test1.png  used on input line 186.
 (pdftex.def)             Requested size: 260.16739pt x 173.44492pt.
 
-Overfull \vbox (0.11829pt too high) detected at line 219
+Overfull \vbox (0.11829pt too high) detected at line 186
  []
 
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 219.
+Package pdftex.def Info: pic/logo.png  used on input line 186.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
 [17
 
@@ -1410,22 +1410,22 @@ Package pdftex.def Info: pic/logo.png  used on input line 219.
 <pic/test2.png, id=1576, 722.7pt x 433.62pt>
 File: pic/test2.png Graphic file (type png)
 <use pic/test2.png>
-Package pdftex.def Info: pic/test2.png  used on input line 229.
+Package pdftex.def Info: pic/test2.png  used on input line 195.
 (pdftex.def)             Requested size: 289.07487pt x 173.44492pt.
 
-Overfull \vbox (0.11829pt too high) detected at line 229
+Overfull \vbox (0.11829pt too high) detected at line 195
  []
 
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 229.
+Package pdftex.def Info: pic/logo.png  used on input line 195.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
 [18
 
  <./pic/test2.png>] (./slide.toc)
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 231.
+Package pdftex.def Info: pic/logo.png  used on input line 197.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [19
 
@@ -1433,16 +1433,16 @@ Package pdftex.def Info: pic/logo.png  used on input line 231.
 No file slide.bbl.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 238.
+Package pdftex.def Info: pic/logo.png  used on input line 202.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
 [20
 
 ]
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
-(Font)              scaled to size 35.82726pt on input line 244.
+(Font)              scaled to size 35.82726pt on input line 208.
 File: pic/logo.png Graphic file (type png)
 <use pic/logo.png>
-Package pdftex.def Info: pic/logo.png  used on input line 244.
+Package pdftex.def Info: pic/logo.png  used on input line 208.
 (pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
  [21
 
@@ -1471,7 +1471,7 @@ Package rerunfilecheck Info: File `slide.out' has not changed.
 Here is how much of TeX's memory you used:
  30351 strings out of 474115
  577789 string characters out of 5740621
- 1959190 words of memory out of 5000000
+ 1958190 words of memory out of 5000000
  51726 multiletter control sequences out of 15000+600000
  621001 words of font info for 250 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1480,7 +1480,7 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{eq:ctr_shale} has been referenced but does not exist, replaced by a fixed one
 
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><d:/Program Files/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on slide.pdf (21 pages, 1862476 bytes).
+Output written on slide.pdf (21 pages, 1862487 bytes).
 PDF statistics:
  2251 PDF objects out of 2487 (max. 8388607)
  1443 compressed objects within 15 object streams
